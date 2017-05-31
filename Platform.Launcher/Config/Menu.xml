@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Menu.xsd">
+  <category id="946724322e154ed7b050e047f78b0664" name="客户业务"  >
+    <category id="88044a45b47a4c49af0b25b92da26f57" name="客户管理"  >
+      <trade id="16dbeb8245694006b07a7f0d9154bec3"  name="客户建立/维护" code="010101" action="Trade.App.T0000"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade id="39f47b2107bc4adeb2875c726e54371f" name="客户详细信息维护" code="010102" action="Trade.Customer.T010102"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="16dbeb82456a4006b0787f0d9154bec6" name="客户关系信息维护" code="010301" action="Trade.Customer.T010301"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="4c333b9a5576491e8646876723421771" name="家庭及成员信息维护" code="010303" action="Trade.Customer.T010303"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="712da8da925c43858f65323f75e0b16a" name="客户等级维护" code="010304" action="Trade.Customer.T010304"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="e4fde514c67d4de68038a91bc31c2011" name="综合签约" code="010119" action="Trade.Customer.T010119"  >
+      </trade>
+      <trade id="6a46757a1cf946acbc14d227dace0e2a" name="黑名单信息维护" code="010307" action="Trade.Customer.T010307"  />
+      <trade id="e5d81441b7b84ff08314e4d47e8b0168" name="客户限制维护" code="010308" action="Trade.Customer.T010308"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="e5d81441b7b84ff08314e4d47e8b0169" name="黑名单客户预授权交易" code="010309" action="Trade.Customer.T010309"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="0abd24922e984f5abc66da51f62baa72" name="客户号注销" code="010399" action="Trade.Customer.T010399"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+    <category id="89144a45b47a4c49af0b25b92da26f57" name="客户经理"  >
+      <trade id="16dbeb824569400aaa787f0d9154bec3" name="客户经理信息维护" code="010201" action="Trade.Customer.T010201"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="16dbeb82456a4006b0787f0d9154bec3" name="客户与客户经理关联" code="010202" action="Trade.Customer.T010202"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="16dbeb82456a4006b0787f0d91541234" name="客户经理移交" code="010501" action="Trade.Customer.T010501"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="16dbeb82456a4006b0787f0d91541235" name="客户经理信息查询" code="010502" action="Trade.Customer.T010502"  >
+      </trade>
+      <trade id="16dbeb82456a4006b0787f0d91541236" name="客户信息合并" code="010105" action="Trade.Customer.T010105"  >
+      </trade>
+    </category>
+    <category id="38f47b2107bc4adeb2875c726e54371f" name="客户查询"  >
+      <trade id="a5dfeab32eb34b2a865bf05e06fb178b" name="客户信息查询" code="010401" action="Trade.Customer.T010401"  />
+      <trade id="e4fde514c67d4de68038a92yc31c204a" name="客户经理信息查询" code="010402" action="Trade.Customer.T010402"  />
+      <trade id="f6c1c7cf656e4edbb086024da5ade000" name="客户关系查询" code="010403" action="Trade.Customer.T010403"  />
+      <trade id="ba936305fd3147429b40eb88292e9038" name="客户家庭信息查询" code="010404" action="Trade.Customer.T010404"  />
+      <trade id="85268a26a80d4cd9abe9141995f9ec46" name="客户与经理关联查询" code="010405" action="Trade.Customer.T010405"  />
+      <trade id="f89a90c5f3214b8990f92d85e18dd9bb" name="重要信息变更明细查询" code="010406" action="Trade.Customer.T010406"  />
+      <trade id="41827596ea274834a20204f50c3d31a6" name="综合签约查询" code="010306" action="Trade.Customer.T010306"  />
+    </category>
+  </category>
+  <category id="ac2f027059a746aaac66ba019e61df21" name="存款业务"  >
+    <category id="a9a746c2f02705aaac66ba019161df3e" name="开销户"  >
+      <trade id="cd06014549d344c2b5e283eb724e0c6c" name="对私开户" code="100101" action="Trade.Personal.T100101"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1500" key="Priority"/>
+      </trade>
+      <trade id="92d7e514cfc44411a611c5156dcd8465" name="批量开户" code="100102" action="Trade.Personal.T100102"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="09c4eb32caff45d8ae973f132e3bca68" name="批量开户单笔打印" code="100103" action="Trade.Personal.T100103"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="14dbfc759bc743338dd093bc334300f3" name="批量开户批量打印" code="100104" action="Trade.Personal.T100104"  >
+        <metadata value="true" key="isPaymentFee"/>
+      </trade>
+      <trade id="70c2c3e13ded4bf0a8893d857c29d957" name="对私附属卡开户" code="100120" action="Trade.Personal.T100120"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="dc9a67d37f3249f08518e717bd71a1f2" name="对私子账户开户" code="100121" action="Trade.Personal.T100121"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="31e1f99c7e614dd2a0473c7352e2b53c" name="借记卡激活" code="100130" action="Trade.Personal.T100130"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="bfa8ea65abe1417ca675b4573e911837" name="对私销户" code="100140" action="Trade.Personal.T100140"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="36024360faf848a18fa88e2920a7c684" name="网上开户信息打印" code="100150" action="Trade.Personal.T100150"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="04748b71b45b477a97c31e60a4ac41eb" name="对公活期开户" code="200101" action="Trade.Company.T200101"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1500" key="Priority"/>
+      </trade>
+      <trade id="145da93225ff48e0a6ff8ae2b7515586" name="对公活期开户确认" code="200102" action="Trade.Company.T200102"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="9c85f5beee1048e796c7b9cf045d8ac2" name="对公活期特殊试算帐号" code="200103" action="Trade.Company.T200103"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPaymentFee"/>
+      </trade>
+      <trade id="df7760b11e3748c49abc584b19b7737a" name="对公活期特殊开户" code="200104" action="Trade.Company.T200104"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="4beca5657b8848a99e5aaa742cfc3232" name="对公定期开户" code="200105" action="Trade.Company.T200105"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="8bd0cd92e8b04611afd15265ded7282c" name="对公子账户开户" code="200107" action="Trade.Company.T200107"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="7b6af7afbea9498582393ee5304eff3e" name="对公销户预结息" code="200120" action="Trade.Company.T200120"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="068e5e40aeac4e20be0a45066689fad2" name="对公销户" code="200121" action="Trade.Company.T200121"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+    </category>
+    <category id="2219c66d4f9a4917837731d7dc70981e" name="记名卡业务"  >
+      <trade id="7a5b1fba2bf347fc86593afa35fae883" name="开个人记名卡" code="100501" action="Trade.Personal.T100501"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="00dc3d341dbc48de898d53b9d75068dd" name="批量开记名卡" code="100502" action="Trade.Personal.T100502"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="d0b0d549fba8407ea6fb907150071f6e" name="批量开记名卡撤销" code="100503" action="Trade.Personal.T100503"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ba24f9e46dcc490bb10ba0e12dbe6ff9" name="批量开记名卡确认" code="100504" action="Trade.Personal.T100504"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="0a061207ba474ede8d660d5897bb8639" name="单张领记名卡" code="100520" action="Trade.Personal.T100520"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="f59e40c1fc2243a78a8dd1c5ad9d38d1" name="批量领记名卡" code="100521" action="Trade.Personal.T100521"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="59011d48ebb34a06852ff85184751517" name="记名卡申请查询" code="100530" action="Trade.Personal.T100530"  />
+    </category>
+    <category id="a9a746c2f02705aaac66ba019e62df2e" name="存取款"  >
+      <trade id="6b7cdc64f4454bb285770866d0bbc1bc" name="对私存款" code="101001" action="Trade.Personal.T101001"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1800" key="Priority"/>
+      </trade>
+      <trade id="3d7eecc62f33419c83c6bd95b884b517" name="对私取款" code="101002" action="Trade.Personal.T101002"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1700" key="Priority"/>
+      </trade>
+      <trade id="a10fe802d9034d39b61bc79ba207be07" name="对公现金存款" code="201001" action="Trade.Company.T201001"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="1800" key="Priority"/>
+      </trade>
+      <trade id="d2540785de47462fa21565e11f3fa427" name="对公现金取款" code="201002" action="Trade.Company.T201002"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1700" key="Priority"/>
+      </trade>
+      <trade id="b472b90dfdf2464282194297569ffd43" name="对公转账记账" code="201003" action="Trade.Company.T201003"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1600" key="Priority"/>
+      </trade>
+      <trade id="b7a43c908b0d406d98719bd9d93b0702" name="对公定期部提" code="201004" action="Trade.Company.T201004"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+    </category>
+    <category id="cd1283ddff66478297c8896b3bb81f2e" name="保证金业务"  >
+      <trade id="4cf42cb958ed471aa0254f378c0c38f6" name="保证金存款" code="202001" action="Trade.Company.T202001"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="f89ebf93ac3143849a96493f83150b99" name="保证金取款" code="202002" action="Trade.Company.T202002"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="4e68cbbc0cf240649276af072bfc3b7c" name="保证金锁定" code="202003" action="Trade.Company.T202003"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="4326e4e81098478987bd09defdabf8d2" name="保证金解锁" code="202004" action="Trade.Company.T202004"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="026240f973f340d89fb23ffddeafb932" name="承兑保证金查询" code="202012" action="Trade.Company.T202012"  />
+    </category>
+    <category id="a9a746c2f02705aaac66ba019e63df2e" name="特殊业务"  >
+      <trade id="4d5419fca56b48619214fa33376037de" name="冻结止付业务" code="207001" action="Trade.Company.T207001"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="4d5419fca56b48619214fa33376037da" name="对私特殊业务" code="102001" action="Trade.Personal.T102001"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="4cdb8f25c11b40ceb1abbaac95c03400" name="对私子账户存单转换" code="102002" action="Trade.Personal.T102002"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="3c14d72ad13f4d6885b8bc0c777652e9" name="存折写磁" code="102003" action="Trade.Personal.T102003"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="0b3a08bbe5c24e548f05cc00bd517021" name="即办卡同号换卡" code="102004" action="Trade.Personal.T102004"  />
+      <trade id="a33d1cdd245a4305afcdead938119f0d" name="虚拟账户升级申请" code="102005" action="Trade.Personal.T102005"  />
+      <trade id="d988275f95ee49b69d0f0bfdefdb6e15" name="对公定期挂失" code="203001" action="Trade.Company.T203001"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="7e4d07dbb1b944c4bb74448dea9948d1" name="对公定期解挂" code="203002" action="Trade.Company.T203002"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="bdc7b8c995f34118823cb0ea6498e93c" name="对公定期更换介质" code="203003" action="Trade.Company.T203003"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="bbd8bf3754894b7eb34ee973e09e4513" name="对公证实书存单转换" code="203004" action="Trade.Company.T203004"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="cb8ca95df8cb4ac1ba94b4edcc2cbb91" name="扣划业务处理" code="300203" action="Trade.Internal.T300203"  />
+      <trade id="87c845fa1abb4f04a5de71a77798bdf6" name="计划扣划维护" code="300204" action="Trade.Internal.T300204"  />
+      <trade id="834eda5333f3471faf014f4ffe3f9271" name="提取扣划利息" code="300205" action="Trade.Internal.T300205"  />
+      <trade id="7baaf19eb58a42dca151f1a13768dcb5" name="存款透支签约管理" code="102006" action="Trade.Personal.T102006"  />
+    </category>
+    <category id="a9a746c2f02705aaac66ba466e63df2e" name="存款证明"  >
+      <trade id="6921c7969f914cac975f037bae8f8969" name="存款证明开立" code="103001" action="Trade.Personal.T103001"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="d0fccfa47d0d45e780991849472ab6e0" name="存款证明解除" code="103002" action="Trade.Personal.T103002"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="a021e90ef0d24b1f86e78256965d6d8f" name="存款证明查询" code="103003" action="Trade.Personal.T103003"  />
+    </category>
+    <category id="a9a746c2f02705aaac66ba019e64df2e" name="维护业务"  >
+      <trade id="11aac010dac142a1a3c5e337977ca2f9" name="对私账户信息维护" code="104001" action="Trade.Personal.T104001"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="50daae24ebd04bf4969fc8daf221cee2" name="零整自扣关系维护" code="104002" action="Trade.Personal.T104002"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="379eb01d97334d17a90f7005226a157e" name="附属卡限额维护" code="104003" action="Trade.Personal.T104003"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="68dd08fb7b1e46c196e20606e0cb64a0" name="电话银行查询密码维护" code="104004" action="Trade.Personal.T104004"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="86f83b23137a4943b7373172115e80b1" name="主附卡关系查询" code="104010" action="Trade.Personal.T104010"  />
+      <trade id="f12e3434f7fb484eab3eb6cf541e192b" name="卡信息查询" code="109906" action="Trade.Personal.T109906"  />
+      <trade id="2245959f9e704042b18b085edca92542" name="对公账户信息维护" code="204001" action="Trade.Company.T204001"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="0e1af90bfeb7441a9aee6389be2a8ce8" name="对公通兑限额维护" code="204002" action="Trade.Company.T204002"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="96409d0e8a2f497e9388725e5f950f15" name="对公活期产品转换" code="204003" action="Trade.Company.T204003"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="68da812aaf4743feabec7c28c19a4aa3" name="印鉴卡关联查询" code="204011" action="Trade.Company.T204011"  />
+      <trade id="7f03980cd2484d56a01b46a0d4e8545d" name="协定存款登记" code="204020" action="Trade.Company.T204020"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="447d496942d3490eb24ef983acb779d1" name="协定存款注销" code="204021" action="Trade.Company.T204021"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="2b38908acdb844249386a83d5c1d8f57" name="协定存款查询" code="204022" action="Trade.Company.T204022"  />
+      <trade id="4b824b4f5659458d9200e6cdb56d1300" name="证实书存单置换查询" code="204030" action="Trade.Company.T204030"  />
+    </category>
+    <category id="a9a746c2f02705aaac66ba019e51df2e" name="制卡业务"  >
+      <trade id="0063839d56a240879b98d4828e5c1228" name="申请预制即办卡" code="105001" action="Trade.Personal.T105001"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="b6327cb5b2ba4fbf8c9285a98465cb44" name="批量生成制卡文件" code="105002" action="Trade.Personal.T105002"  />
+      <trade id="c6f69464a1194e84a9bd000f68c8ba59" name="制卡完成确认" code="105005" action="Trade.Personal.T105005"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="c6c3f4cb874547f4b775a0a22a4c46dc" name="制卡批次查询" code="105010" action="Trade.Personal.T105010"  />
+    </category>
+    <category id="9a02db7022154fdc89225c244d47f196" name="特色产品"  >
+      <trade id="79063250efdb40d2884f973daaca8606" name="卡内智能定期1号签约维护" code="106001" action="Trade.Personal.T106001"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="19958b0a16f349efb36056ab35a20217" name="卡内智能定期1号签约查询" code="106005" action="Trade.Personal.T106005"  />
+    </category>
+    <category id="c2c29446723049d7affa2cdbd24e766a" name="资金归集"  >
+      <trade id="6066ae19332f4045815b7332ce3efc43" name="资金归集签约管理" code="205001" action="Trade.Company.T205001"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="afb5760042f64970a3a984d620746a6e" name="资金归集直接扣款" code="205002" action="Trade.Company.T205002"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="62d03d08305b42ccaf8787d5d61a016f" name="集体账户签约管理" code="205003" action="Trade.Company.T205003"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="7294374890d94fbd9e5f64cd4fe291c2" name="资金归集签约查询" code="205010" action="Trade.Company.T205010"  />
+      <trade id="82587334eccb43d58f24bba593168291" name="资金归集明细查询" code="205011" action="Trade.Company.T205011"  />
+    </category>
+    <category id="319cab8b398b40bcb93b3046c94fcqwe" name="久悬户管理"  >
+      <trade id="f299a84600e24e2b89f113b54651fdb2" name="久悬户处理申请" code="206001" action="Trade.Company.T206001"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="3a2daaf1c2314d75936528b27c9d03c6" name="置久悬户" code="206002" action="Trade.Company.T206002"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="8722468c226146d0b8f75c45d3573f09" name="久悬户解封" code="206003" action="Trade.Company.T206003"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="ca6c2a360812495cad2454e9cbc2c98e" name="久悬户登记簿查询" code="206004" action="Trade.Company.T206004"  />
+      <trade id="8722468c226146d0b8f75c45d3573f07" name="置久悬户及久解封" code="206005" action="Trade.Company.T206005"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+    </category>
+    <category id="6f0542d90b664ceca6f27d00f1a539a6" name="大额存单"  >
+      <trade id="c4e8796b703b4a18aa79bfef4eb173d1" name="大额可转让存单认购" code="208001" action="Trade.Company.T208001"  />
+      <trade id="8cb2b5cea3804cb196b2488dcd1d3082" name="大额存单提前支取" code="208002" action="Trade.Company.T208002"  />
+      <trade id="88e74ccd10dc4b478bb786c1601ce316" name="大额存单销户/赎回" code="208003" action="Trade.Company.T208003"  />
+      <trade id="6a51343db6c24036a76b2870c75c36f6" name="大额可转让存单转让" code="208004" action="Trade.Company.T208004"  />
+      <trade id="531574187f664f43b72922cdd8b727e6" name="大额存单客户查询" code="208005" action="Trade.Company.T208005"  />
+      <trade id="61279a028c7844b6bdf87774c5b745e1" name="大额存单期次信息查询" code="208006" action="Trade.Company.T208006"  />
+      <trade id="86b469f688254fab9a0737a400bd5ffe" name="大额存单产品参数管理" code="208007" action="Trade.Company.T208007"  />
+    </category>
+    <category id="44fd86d084fd4ff9bd0e5c512aaf1e45" name="公务卡"  >
+      <trade id="e390d6ab52064b0d9ac2cdaaa8d725b8" name="公务卡存款" code="560001" action="Trade.OfficialCard.T560001"  />
+      <trade id="fa46e7fc4b634a449ba014b62e9f4e28" name="公务卡存款确认" code="560002" action="Trade.OfficialCard.T560002"  />
+      <trade id="9c0805f419eb448e9955f5a1b4d8a4d2" name="公务卡取款" code="560003" action="Trade.OfficialCard.T560003"  />
+      <trade id="f70081ed8195488692adf1161b4b014a" name="公务卡卡卡转账" code="560004" action="Trade.OfficialCard.T560004"  />
+      <trade id="aca78a5cee7c4933a3368f5694ee8b02" name="公务卡电子现金圈存" code="560005" action="Trade.OfficialCard.T560005"  />
+      <trade id="fec3b7f1e1734801a1053d5537c91e38" name="公务卡电子现金圈存撤销" code="560006" action="Trade.OfficialCard.T560006"  />
+      <trade id="79f4d7bd4ca544f5b7fb14a17df3d935" name="公务卡电子现金圈提" code="560007" action="Trade.OfficialCard.T560007"  />
+      <trade id="0f88948d38774ab7bb5a8ef7c643a1ac" name="公务卡余额转移" code="560008" action="Trade.OfficialCard.T560008"  />
+      <trade id="b15340e04b66487797351721f6366355" name="公务卡激活" code="560009" action="Trade.OfficialCard.T560009"  />
+      <trade id="5477b97a253f48cea86a522676b31059" name="公务卡密码申请/重置" code="560010" action="Trade.OfficialCard.T560010"  />
+      <trade id="25cef5bde47a405eac6f3bfb92d3539b" name="公务卡密码修改" code="560011" action="Trade.OfficialCard.T560011"  />
+      <trade id="0eb51dbcfb7941d282c6498c240abd53" name="公务卡交易密码解锁" code="560012" action="Trade.OfficialCard.T560012"  />
+      <trade id="a4bc6533c5fa41b6ab7e289fa2881231" name="公务卡挂失/解挂/申请换卡" code="560013" action="Trade.OfficialCard.T560013"  />
+      <trade id="119956cde75b4225b734f8be8aae2909" name="公务卡补卡换卡" code="560014" action="Trade.OfficialCard.T560014"  />
+      <trade id="ae9d836cf4b1480a881c90492e38e1d4" name="公务卡销户" code="560015" action="Trade.OfficialCard.T560015"  />
+      <trade id="2d810eca893e47bba3380f6b630c55b6" name="公务卡销户结清" code="560016" action="Trade.OfficialCard.T560016"  />
+      <trade id="01fc1189f08446c0b25de280a9c9244a" name="自扣还款账号查询和维护" code="560017" action="Trade.OfficialCard.T560017"  />
+      <trade id="3b9b48105ec34254b548d8eaa3d64102" name="公务卡客户地址查询及更新" code="560018" action="Trade.OfficialCard.T560018"  />
+      <trade id="2156d7f8e32c4092aed25c8b856a5d7b" name="公务卡客户资料查询及更新" code="560019" action="Trade.OfficialCard.T560019"  />
+      <trade id="1c46e997236d48d4b6c940c2b83213ed" name="公务卡交易撤销" code="560020" action="Trade.OfficialCard.T560020"  />
+      <trade id="68da4008c74e4bd7a8b658dcfe1ec0f7" name="公务卡补打流水" code="560021" action="Trade.OfficialCard.T560021"  />
+      <trade id="b9545569934a4c0385180fd5a88d2d36" name="柜员交易明细查询" code="560022" action="Trade.OfficialCard.T560022"  />
+      <trade id="6dd8a1344f7041549217d2ae09627def" name="本行公务卡交易流水查询" code="560023" action="Trade.OfficialCard.T560023"  />
+      <trade id="7824009ddb3c4be58e07ecaced0ca765" name="公务卡账户查询" code="560024" action="Trade.OfficialCard.T560024"  />
+      <trade id="173f39c277ef4b17b1908c60b1b1006e" name="公务卡帐单信息查询" code="560025" action="Trade.OfficialCard.T560025"  />
+      <trade id="71882ade76b64c2c94bc12b69a081158" name="公务卡帐单应还款金额查询" code="560026" action="Trade.OfficialCard.T560026"  />
+      <trade id="6774d6c6ebce46069d61bba11071d6bd" name="自扣还款结果查询" code="560027" action="Trade.OfficialCard.T560027"  />
+      <trade id="f006779811624acdb230ec7e10c38498" name="证件号码查询公务卡号" code="560028" action="Trade.OfficialCard.T560028"  />
+      <trade id="098d845b798a4b61a12d36f4ec3a7c6e" name="分期付款交易明细查询" code="560029" action="Trade.OfficialCard.T560029"  />
+      <trade id="3ffd948c7ac244fbae0b6938ebc34176" name="调整服务方式" code="560030" action="Trade.OfficialCard.T560030"  />
+    </category>
+    <category id="e4772592de1e4464bd36bd0017096ffc" name="银联柜面通"  >
+      <trade id="c226ef3e3b1b4d53a9fb56b549324267" name="银联柜面通补打流水交易" code="107001" action="Trade.Personal.T107001"  />
+      <trade id="e85e63965bfb41408a57059d3f30a475" name="银联柜面通余额查询" code="107002" action="Trade.Personal.T107002"  />
+      <trade id="95e31210b268459cb69c9651b7a33aea" name="银联柜面通取现" code="107003" action="Trade.Personal.T107003"  />
+      <trade id="b3382d2988db4b2985f85fe283f8c518" name="银联柜面通存款" code="107004" action="Trade.Personal.T107004"  />
+      <trade id="8d3f56f9961a4b4ca65d73d94a6e7ce0" name="银联柜面通存款撤销" code="107005" action="Trade.Personal.T107005"  />
+      <trade id="db262b9ace574308abed2e7cce182737" name="银联柜面通转账" code="107006" action="Trade.Personal.T107006"  />
+      <trade id="39c182daaf71476db17229fe886d61e5" name="银联柜面通取现冲正" code="107007" action="Trade.Personal.T107007"  />
+      <trade id="913827a6b75147b0bd1c27a18f9a56d2" name="存款撤销冲正" code="107008" action="Trade.Personal.T107008"  />
+      <trade id="867546edd0364315a169da0603a6ab39" name="银联柜面通存款确认" code="107009" action="Trade.Personal.T107009"  />
+    </category>
+  </category>
+  <category id="327EC250A6DF3B33E050010A08059DEB" name="二代支付业务"  >
+    <category id="c61d6fc6b6d743319b08f0d4cdaede4f" name="大额业务"  >
+      <trade id="d641a2ce154e4b9aa1e11a27257b9cc2" name="汇兑业务录入" code="260001" action="Trade.Cnaps2.T260001"  />
+      <trade id="ac559e7949db41aeba5a3c9ef3e919d8" name="汇兑业务删除" code="260002" action="Trade.Cnaps2.T260002"  />
+      <trade id="aafc7887954c4339ae18a7b0d6ffedf7" name="退汇业务录入" code="260003" action="Trade.Cnaps2.T260003"  />
+      <trade id="342a08b747ef438fb31d57eea0483801" name="退汇业务删除" code="260004" action="Trade.Cnaps2.T260004"  />
+      <trade id="c294c313bd66460db8c13f261cd85331" name="大额滞留交易查询" code="260005" action="Trade.Cnaps2.T260005"  />
+      <trade id="0cb1879cdf9149d98bbe82785eddfbdb" name="大额发送" code="260006" action="Trade.Cnaps2.T260006"  />
+      <trade id="fedc5ddc191a4802bcc883279e63f0ed" name="大额当日抹账" code="260007" action="Trade.Cnaps2.T260007"  />
+      <trade id="7cb372f19e60485eb981934c8d8e182d" name="大额来账挂账手工入账" code="260008" action="Trade.Cnaps2.T260008"  />
+    </category>
+    <category id="28895bf0ac854e1e9e38094f377443f5" name="银行汇票"  >
+      <trade id="506397b609e04525a8639980796af7f3" name="城市商业银行汇票移存业务" code="260101" action="Trade.Cnaps2.T260101"  />
+      <trade id="8c9471a3754e4bc98a4694db2349604e" name="银行汇票申请退回业务报文" code="260102" action="Trade.Cnaps2.T260102"  />
+      <trade id="3829e8604d1942d49ab1ef096fa439cc" name="城市商业银行汇票资金报文" code="260103" action="Trade.Cnaps2.T260103"  />
+      <trade id="f666ee85b33e4522895aa708bfdce1cb" name="签发汇票录入" code="260104" action="Trade.Cnaps2.T260104"  />
+      <trade id="4486ab48df424690af03dd43bba452f2" name="签发汇票删除" code="260105" action="Trade.Cnaps2.T260105"  />
+      <trade id="6c9c490fac8d4f469f7435fd773798a0" name="银行汇票全额兑付通知查询" code="260106" action="Trade.Cnaps2.T260106"  />
+      <trade id="33b7ed6b6f6449ecaf21ec1153b3f6b5" name="本行签发银行汇票查询" code="260107" action="Trade.Cnaps2.T260107"  />
+      <trade id="cb42a992e7164174acc36a722e211248" name="本行兑付银行汇票查询" code="260108" action="Trade.Cnaps2.T260108"  />
+      <trade id="3b51b56ed6c54a5d80b1a01a59cea27c" name="银行汇票申请退回业务查询" code="260109" action="Trade.Cnaps2.T260109"  />
+      <trade id="09f453ea662b48408c0742b40033e377" name="申请清算银行汇票资金查询" code="260110" action="Trade.Cnaps2.T260110"  />
+    </category>
+    <category id="ba27e74716a646f4adacb65ccbb0165c" name="小额业务"  >
+      <trade id="adfe3188bb43462a926601c9f7a5ac3e" name="普通贷记业务录入" code="260201" action="Trade.Cnaps2.T260201"  />
+      <trade id="b9cb1a961196457a862646012470faa4" name="退汇录入" code="260202" action="Trade.Cnaps2.T260202"  />
+      <trade id="8a25aa7ec2b1466886d7e3525ec91393" name="CIS通用回执业务录入" code="260203" action="Trade.Cnaps2.T260203"  />
+      <trade id="79e02c9e7cbb4448b866bd004fc7c163" name="CIS通用回执业务删除" code="260204" action="Trade.Cnaps2.T260204"  />
+      <trade id="56e20141d4d0495495044b2f1827b27d" name="定期贷记业务录入" code="260205" action="Trade.Cnaps2.T260205"  />
+      <trade id="beb4804d30e94f3f8e2065072c11c2a4" name="实时贷记业务录入" code="260206" action="Trade.Cnaps2.T260206"  />
+      <trade id="51e8a357f753479a8bae521e47ba9291" name="普通借记业务录入" code="260207" action="Trade.Cnaps2.T260207"  />
+      <trade id="02a87fe16a1744ca8f31e508639a2788" name="普通借记业务删除" code="260208" action="Trade.Cnaps2.T260208"  />
+      <trade id="8ce67be8cd3c484cb70965ecf1718b3d" name="定期借记业务录入" code="260209" action="Trade.Cnaps2.T260209"  />
+      <trade id="6640811ea66c4ce8a6070d82c6796429" name="定期借记业务删除" code="260210" action="Trade.Cnaps2.T260210"  />
+      <trade id="9a7ec68494704d40abca616d55ea9d1c" name="实时借记业务录入" code="260211" action="Trade.Cnaps2.T260211"  />
+      <trade id="a85f5f8d479f4ea98715fb4ea1f54380" name="银行本票行内兑付" code="260212" action="Trade.Cnaps2.T260212"  />
+      <trade id="0c62e46b7253473db946e546a08267ff" name="小额普通借记来账处理" code="260213" action="Trade.Cnaps2.T260213"  />
+      <trade id="0d39ced6c0014732b85dca1062cad3dc" name="借记业务止付申请报文" code="260214" action="Trade.Cnaps2.T260214"  />
+    </category>
+    <category id="c57478f6e18d4d498e19926a4034b531" name="小额特殊业务"  >
+      <trade id="29946fd8bade411fa06aca8e76d72390" name="支票圈存管理报文" code="260301" action="Trade.Cnaps2.T260301"  />
+      <trade id="cec7493f4e0b47219b12c3ef09196e4d" name="支票圈存应答" code="260302" action="Trade.Cnaps2.T260302"  />
+      <trade id="6e1d6765255640ffb1ef53327dc37a37" name="小额业务报文拼包发送" code="260303" action="Trade.Cnaps2.T260303"  />
+      <!--<trade id="268ebaee724648378174f7e270a66ca5" name="小额往账包重发" code="260304" action="Trade.Cnaps2.T260304"  />-->
+      <trade id="7b42ae15a8a64f4d89baf56b3ab357af" name="小额来账挂账手工入账" code="260305" action="Trade.Cnaps2.T260305"  />
+      <trade id="abb57673893d4db1a4f23496637bcd03" name="小额来账未入账手工入账" code="260306" action="Trade.Cnaps2.T260306"  />
+      <trade id="ef824b0855244d4ab9576a400824e54f" name="小额抹账业务" code="260307" action="Trade.Cnaps2.T260307"  />
+      <trade id="f954a7dcaa2341d3bb0432f44291dc9a" name="批量客户签约协议管理" code="260308" action="Trade.Cnaps2.T260308"  />
+      <trade id="93624508d48f4b2d90dbadd4b6b029ea" name="批量客户账户查询申请" code="260309" action="Trade.Cnaps2.T260309"  />
+      <!--<trade id="6963d07a86304e1c933ef5d52b0df806" name="定期业务协议管理" code="260310" action="Trade.Cnaps2.T260310"  />-->
+      <trade id="01e98f5e71e14d9890e92c0186171bdf" name="实时业务协议管理" code="260311" action="Trade.Cnaps2.T260311"  />
+    </category>
+    <category id="bc20de41f4064cd6b2c58dae37fd4fd3" name="对账处理"  >
+      <trade id="d2bd381e17fc41f1b54e7805fedc27e0" name="大额业务人行对帐申请" code="260401" action="Trade.Cnaps2.T260401"  />
+      <trade id="83c4ab0824aa4c568ba11b0a8b9a593f" name="大额汇总对账查询" code="260402" action="Trade.Cnaps2.T260402"  />
+      <trade id="a6895c33064e41f7b73f9ca205d0390f" name="大额明细对账查询" code="260403" action="Trade.Cnaps2.T260403"  />
+      <trade id="3b2ea341ecf9459791c79e6cfb852546" name="大额业务主机对账" code="260404" action="Trade.Cnaps2.T260404"  />
+      <trade id="4c4b541af1a34c3398f734cb74df1b2c" name="小额业务对账申请" code="260405" action="Trade.Cnaps2.T260405"  />
+      <trade id="8060d4023d13443cadefefe1f5ae4778" name="小额汇总对账查询" code="260406" action="Trade.Cnaps2.T260406"  />
+      <trade id="51fe43e05c3a46f89874c6f01b46de20" name="小额明细对账查询" code="260407" action="Trade.Cnaps2.T260407"  />
+      <trade id="a5c85fb84ab74630bf59013b79f6390f" name="小额业务主机对账" code="260408" action="Trade.Cnaps2.T260408"  />
+      <!--<trade id="23b2de1d1bc644528ca3f99028692650" name="大额预对账查询" code="260409" action="Trade.Cnaps2.T260409"  />-->
+      <trade id="c7ac31a443d54f21a5cce0d2e7f37391" name="支付系统对账负责人维护" code="260410" action="Trade.Cnaps2.T260410"  />
+    </category>
+    <category id="38c0943f1f2a4fa780b0801ca32de394" name="超级网银"  >
+      <trade id="cb6d27b08878494fa6ae58bffe6529fb" name="网上支付系统状态查询" code="260501" action="Trade.Cnaps2.T260501"  />
+      <!--<trade id="387d7b7a59a34f84a8d5c5dc93fa2e85" name="网上支付自由格式" code="260502" action="Trade.Cnaps2.T260502"  />-->
+      <trade id="c01489f9186048dca2714418e2af6f41" name="超级网银账务报文查询" code="260503" action="Trade.Cnaps2.T260503"  />
+      <trade id="c2fc327ce8864c2790bf4c579f4412db" name="网上支付自由格式查询" code="260504" action="Trade.Cnaps2.T260504"  />
+      <trade id="c992034cd57442638ebbda019a6ce9cd" name="网上支付登录与退出" code="260505" action="Trade.Cnaps2.T260505"  />
+      <trade id="988f9b5d362144ba8642ced3cf986488" name="网上支付数字证书绑定" code="260506" action="Trade.Cnaps2.T260506"  />
+      <trade id="bbe5e19e944b4afcb530ec45474bd193" name="网上支付业务状态查询" code="260507" action="Trade.Cnaps2.T260507"  />
+      <trade id="ee53b2a635b649ffb5ca4141ecf6724d" name="网上支付业务撤销申请" code="260508" action="Trade.Cnaps2.T260508"  />
+      <trade id="5b6e543a94414fd3b19ff01de101084b" name="网银汇总对账查询" code="260509" action="Trade.Cnaps2.T260509"  />
+      <trade id="3d4c97079a3548a7bb0d2413ca8958ca" name="网上支付对明细帐" code="260510" action="Trade.Cnaps2.T260510"  />
+      <trade id="cfc98e8293674e4196842b5f57016167" name="网上支付明细下载" code="260511" action="Trade.Cnaps2.T260511"  />
+      <trade id="862f8b296c144fe6aa3ad85d4b8818aa" name="网银汇总对账申请" code="260512" action="Trade.Cnaps2.T260512"  />
+      <trade id="18477331bac54931acd6e593782dbe09" name="超级网银主机对账" code="260513" action="Trade.Cnaps2.T260513"  />
+    </category>
+    <category id="244adf90e43040e190c3f8764f66227f" name="公共业务"  >
+      <trade id="9ea1af5e2f70492fb79b9a5f8c5a2f41" name="自由格式报文" code="260601" action="Trade.Cnaps2.T260601"  />
+      <trade id="3346c8cc37cc44b78e9700d9751adbe8" name="业务退回申请报文" code="260602" action="Trade.Cnaps2.T260602"  />
+      <trade id="bcd7213e2c474da5959a47041502b3b4" name="业务退回应答报文录入" code="260603" action="Trade.Cnaps2.T260603"  />
+      <trade id="8067ee5dc6d04005892320ade19c5437" name="业务退回应答报文发送" code="260604" action="Trade.Cnaps2.T260604"  />
+      <trade id="c87648c2baba41da846294a3c0407379" name="业务撤销申请报文" code="260605" action="Trade.Cnaps2.T260605"  />
+      <trade id="1e951ba1e2f9409c90f40a0fdcf6be3d" name="业务查询报文" code="260606" action="Trade.Cnaps2.T260606"  />
+      <!--<trade id="fdd2d2e40c7240949e6c8782399c0b73" name="业务查复报文" code="260607" action="Trade.Cnaps2.T260607"  />-->
+      <trade id="801dda7ef408464b8fd07803e4e465d7" name="银行承兑汇票查询" code="260608" action="Trade.Cnaps2.T260608"  />
+      <trade id="e30cc2651e6940adb4675431dae5d512" name="银行承兑汇票查复" code="260609" action="Trade.Cnaps2.T260609"  />
+      <trade id="9e19f2a6cfc545fda13156ffed12826c" name="业务状态查询申请报文" code="260610" action="Trade.Cnaps2.T260610"  />
+      <trade id="7b62e15ee62a4dd4816193dd308da545" name="通用非签名信息业务报文" code="260611" action="Trade.Cnaps2.T260611"  />
+      <trade id="99e610ea7591477faaa1fe4118723a90" name="非签名信息业务应答报文" code="260612" action="Trade.Cnaps2.T260612"  />
+      <trade id="5713444f3c7640ed86ece5bf1426656c" name="通用签名信息业务报文" code="260613" action="Trade.Cnaps2.T260613"  />
+      <trade id="0269754315b94787b3d360a5f3458ace" name="通用签名信息业务应答报文" code="260614" action="Trade.Cnaps2.T260614"  />
+      <trade id="18f81d7870b844e0ab74d0f1e922e098" name="核押查询" code="260615" action="Trade.Cnaps2.T260615"  />
+    </category>
+    <category id="e2e8654e520e42a3b24ba90bc5f8ca95" name="大额查询"  >
+      <trade id="6e08c23e16194c3f9e8dcd13f9bfea4a" name="大额汇兑业务查询" code="260701" action="Trade.Cnaps2.T260701"  />
+      <trade id="cb8cda8d71574fcf883984e3b5fa3c18" name="即时转账业务查询" code="260702" action="Trade.Cnaps2.T260702"  />
+      <trade id="6d8fbdf23d0b430e9a468f4d620f8c9b" name="退汇查询" code="260703" action="Trade.Cnaps2.T260703"  />
+      <trade id="2fdc6378028d476392fd21d669b9b3cf" name="收费明细登记薄查询" code="260704" action="Trade.Cnaps2.T260704"  />
+    </category>
+    <category id="de69f92736df4f748bb7da9be929a2a0" name="小额查询"  >
+      <!--<trade id="a4554ad53a524bd2bf40ea8134ac44fd" name="小额汇兑业务查询" code="260801" action="Trade.Cnaps2.T260801"  />-->
+      <trade id="c235df4c60c045aab45a69d12d088df1" name="小额包信息查询" code="260802" action="Trade.Cnaps2.T260802"  />
+      <trade id="1e2cf6e5ef4440a1bec921937183e736" name="客户账户应答查询" code="260803" action="Trade.Cnaps2.T260803"  />
+      <trade id="1a58336a1629439d8459e7514099f706" name="代收付协议查询" code="260804" action="Trade.Cnaps2.T260804"  />
+      <trade id="aadc1c2b582d4eb9b1323bf83ad32ca2" name="支票圈存管理业务查询" code="260805" action="Trade.Cnaps2.T260805"  />
+      <trade id="0dc3ae293db7456bacc212ae019a831c" name="借记业务止付查询" code="260806" action="Trade.Cnaps2.T260806"  />
+      <trade id="e75a2c5c298d48469292215d6a35b3ef" name="代付业务查询" code="260807" action="Trade.Cnaps2.T260807"  />
+      <trade id="622a111679874cbaa9cafe763cb2be5e" name="代收业务查询" code="260808" action="Trade.Cnaps2.T260808"  />
+      <trade id="3f00854a6c3f48f4bf53381a4aa97e5a" name="代付业务明细查询" code="260809" action="Trade.Cnaps2.T260809"  />
+      <trade id="87cc0280aac34a35bb169b7c288bb838" name="代收业务明细查询" code="260810" action="Trade.Cnaps2.T260810"  />
+      <trade id="18a29326d128477393c733bcd5e75f6e" name="代收付业务收付款确认" code="260811" action="Trade.Cnaps2.T260811"  />
+      <trade id="cb106e350c964165a42d66d8f16b77c9" name="实时业务冲正查询" code="260812" action="Trade.Cnaps2.T260812"  />
+      <trade id="ad238407b741411ead7de111f87fac18" name="退汇查询" code="260813" action="Trade.Cnaps2.T260813"  />
+      <trade id="cd2d31dbc1e845a99259d9c714ca0eae" name="定期借贷记明细查询" code="260814" action="Trade.Cnaps2.T260814"  />
+      <!--<trade id="ad1a6040ede846f18e0da6d13f2a8206" name="影像系统信息查询" code="260815" action="Trade.Cnaps2.T260815"  />-->
+      <trade id="942d326680ad4f72868a6fca9097e19c" name="批量客户账户查询" code="260816" action="Trade.Cnaps2.T260816"  />
+      <!--<trade id="51e7d2e5a5cd45fb9b27fd5639428b37" name="批量客户签约协议管理查询" code="260817" action="Trade.Cnaps2.T260817"  />-->
+    </category>
+    <category id="cad1e8ee0b9748b793712c9930eb00c1" name="公共查询"  >
+      <trade id="0180fbbb0e2a4c478a907216079a45a6" name="自由格式查询" code="260901" action="Trade.Cnaps2.T260901"  />
+      <trade id="7a65f41c282a4b3bb656d3dc71ea8433" name="业务退回业务查询" code="260902" action="Trade.Cnaps2.T260902"  />
+      <trade id="5c92d12984a44f33a7faac3c6fbe9f18" name="业务撤销查询" code="260903" action="Trade.Cnaps2.T260903"  />
+      <trade id="a0a4aeb3c0db4acb9ab9645dbce3bf94" name="查询业务查询" code="260904" action="Trade.Cnaps2.T260904"  />
+      <trade id="cbc8e33adb3c4c9eb4bd469825e40a2e" name="业务状态查询结果查询" code="260905" action="Trade.Cnaps2.T260905"  />
+      <trade id="22cbe140875e4e6eb12101eb1a3dd429" name="银行承兑汇票查询业务查询" code="260906" action="Trade.Cnaps2.T260906"  />
+      <trade id="6f9c18baa33747bd95a5bc1e0af755ef" name="通用信息查询" code="260907" action="Trade.Cnaps2.T260907"  />
+      <trade id="c65c42c8a0164d8cbcf09cf42787033b" name="停启运信息查询" code="260908" action="Trade.Cnaps2.T260908"  />
+      <trade id="4eeaf095127a4355b3f4703aa3b03395" name="行名行号查询" code="260909" action="Trade.Cnaps2.T260909"  />
+      <trade id="34c23ffc6b42483cb8c295e9a38ec9ba" name="数字证书查询" code="260910" action="Trade.Cnaps2.T260910"  />
+      <!--<trade id="8e816c4ddac8429a8e0ecf72f598ef22" name="轧差清算登记簿查询" code="260911" action="Trade.Cnaps2.T260911"  />
+      <trade id="95734ed8b3a7456c85ea476fc108f871" name="直接参与行状态查询" code="260912" action="Trade.Cnaps2.T260912"  />
+      <trade id="0abad72d70ea418cafdd197e2df1b284" name="业务种类与类型查询" code="260913" action="Trade.Cnaps2.T260913"  />
+      <trade id="852add06c51a4eb6a8b707872d067a99" name="系统参数查询" code="260914" action="Trade.Cnaps2.T260914"  />
+      <trade id="945c27b4e9a54a27b71d1a8bb2c50310" name="丢弃报文查询" code="260915" action="Trade.Cnaps2.T260915"  />
+      <trade id="ea5ad3287f5e4a9e883be1c135037eda" name="CIS代理行查询" code="260916" action="Trade.Cnaps2.T260916"  />
+      <trade id="84e2140ec63e4275843afcc35204e490" name="业务权限查询" code="260917" action="Trade.Cnaps2.T260917"  />
+      <trade id="0a0948bf99404812bd8c2ef26eee6308" name="行别查询" code="260918" action="Trade.Cnaps2.T260918"  />
+      <trade id="300af9c3720d410693c0c0a600e82f43" name="城市代码查询" code="260919" action="Trade.Cnaps2.T260919"  />
+      <trade id="86432c4122ed4e3291ed8789bb4d9996" name="CCPC代码查询" code="260920" action="Trade.Cnaps2.T260920"  />
+      <trade id="812c2ba9bd384213ae72a332da126139" name="业务金额上限查询" code="260921" action="Trade.Cnaps2.T260921"  />
+      <trade id="4995a5525eaa4f4dbe7c067225ef7a85" name="附加域查询" code="260922" action="Trade.Cnaps2.T260922"  />
+      <trade id="24cd7baf079041caa2984092ebdd9d1b" name="环境参数变更期数查询" code="260923" action="Trade.Cnaps2.T260923"  />
+      <trade id="d7ab6074ebd14bffbedcf5ee6411b317" name="系统状态查询" code="260924" action="Trade.Cnaps2.T260924"  />
+      <trade id="35e0f0e17542437a8a66b10fd63a04a2" name="手工监控系统" code="260925" action="Trade.Cnaps2.T260925"  />
+      <trade id="815bc4f9f6c340cd8073a2f91318e9ee" name="日终处理" code="260926" action="Trade.Cnaps2.T260926"  />-->
+      <trade id="f174ac5cb82947b79c34f1a555a54821" name="事务信息打印" code="260927" action="Trade.Cnaps2.T260927"  />
+      <trade id="6eef2cbdc7e1471d8907fe83b1fa97b6" name="大小额往帐笔数金额统计" code="260928" action="Trade.Cnaps2.T260928"  />
+      <trade id="e1c9a6977eee4d6c9ceb0b2b1407c960" name="余额告警通知报文查询" code="260929" action="Trade.Cnaps2.T260929"  />
+      <!--<trade id="ea1eacb0a07f48519f882ed97de4f07d" name="大小额来账查询与打印" code="260930" action="Trade.Cnaps2.T260930"  />-->
+      <trade id="03040c22e58a494b93b30c9517936510" name="人行清算账户日报表打印" code="260931" action="Trade.Cnaps2.T260931"  />
+      <trade id="f3dc6efa982d4a2a921b459271afe55e" name="大小额业务的交易笔数合计" code="260932" action="Trade.Cnaps2.T260932"  />
+      <trade id="f8837462f9b04d3f8cc17cc6077a7fa6" name="托收银承信息查询" code="260933" action="Trade.Cnaps2.T260933"  />
+      <trade id="5ad13024a5134271930d65cd3bd62f71" name="CIS回执及本票截留信息查询" code="260934" action="Trade.Cnaps2.T260934"  />
+    </category>
+    <category id="fae9f1f1b219456d9231a8fb01a060ff" name="win端工具"  >
+      <trade id="b150a23e9e9a45a68d195b9ed4cd2e54" name="支付系统登录" code="260951" action="Trade.Cnaps2.T260951"  />
+      <trade id="e4f3a01545e445d98c15d074c70b35c2" name="操作员维护" code="260952" action="Trade.Cnaps2.T260952"  />
+      <trade id="5532723a9db54a5f958495bbf3f13e51" name="系统状态查询" code="260953" action="Trade.Cnaps2.T260953"  />
+      <trade id="3a4f05f98f7744ff9e93259c18aaf4b0" name="数字证书绑定管理" code="260954" action="Trade.Cnaps2.T260954"  />
+      <trade id="9cea4c18bf214bf49fa7a374f29aeeb0" name="数字证书下载管理" code="260955" action="Trade.Cnaps2.T260955"  />
+      <trade id="d246337aad2f4e5fbc89051fe8112b9a" name="清算账户余额警戒值设置" code="260956" action="Trade.Cnaps2.T260956"  />
+      <trade id="6eb5639ff96a41c5afd46133ba658b7e" name="清算账户信息查询" code="260957" action="Trade.Cnaps2.T260957"  />
+      <trade id="e9193de1693a46a9973dcb033f4d3041" name="清算账户资金池管理" code="260959" action="Trade.Cnaps2.T260959"  />
+      <trade id="e70187060da54a7ca0e8e64dd6acd664" name="清算账户自动拆借管理" code="260960" action="Trade.Cnaps2.T260960"  />
+      <trade id="257382162a014be5a9d709469678b37e" name="清算账户自动拆借管理应答" code="260961" action="Trade.Cnaps2.T260961"  />
+      <trade id="2a8d178014de435e976163daec83c655" name="清算账户维护申请" code="260962" action="Trade.Cnaps2.T260962"  />
+      <trade id="22891f74ee484b8087a4e7990a3f2d7b" name="净借记限额圈存资金调整" code="260963" action="Trade.Cnaps2.T260963"  />
+      <trade id="686e5dd97d07414e8f67bf9699aebe71" name="资金池/自动拆借管理查询" code="260964" action="Trade.Cnaps2.T260964"  />
+      <trade id="8354353caf394e358ef0c3550f225ac4" name="可用额度预警值设置" code="260966" action="Trade.Cnaps2.T260966"  />
+      <trade id="7a4a0aea02824a709e4e698bbeba0887" name="净借记限额质押" code="260967" action="Trade.Cnaps2.T260967"  />
+      <trade id="a866867fe2a84be9871b9a48c2e34eb5" name="清算/轧差排队管理" code="260968" action="Trade.Cnaps2.T260968"  />
+      <trade id="f0287e4668634e2481e4c35cf523cf8a" name="支付业务汇总报表" code="260970" action="Trade.Cnaps2.T260970"  />
+      <trade id="2de414ba452d4a709420534224ee19bb" name="停运登记薄查询" code="260971" action="Trade.Cnaps2.T260971"  />
+      <trade id="47f82f79b94d4000869c8bec95452024" name="非支付/支付业务查询" code="260972" action="Trade.Cnaps2.T260972"  />
+    </category>
+  </category>
+  <category id="ded2a0e27d1945d9b78c4439eca2cdac" name="内部业务"  >
+    <category id="ee80b023ad4941d5a76b3f1c4db145b6" name="内部记账"  >
+      <trade id="8d89b04272ff4a439f720d7b77c5a4ee" name="综合记账" code="300101" action="Trade.Internal.T300101"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="25724fabcf7546cd88b3ed950a31ba09" name="销账号查询" code="300104" action="Trade.Internal.T300104"  />
+      <trade id="88fc6a1793aa465f9b20b5f9d3e90070" name="内部账户开户" code="300110" action="Trade.Internal.T300110"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="399817e8fb944fee998169072f067a94" name="内部账户销户" code="300113" action="Trade.Internal.T300113"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="5243d3a8a0dc4a909bbfdb53d2afad7d" name="定向账户维护" code="300114" action="Trade.Internal.T300114"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="9ead8d6446df422b8f570f1a7ab5b8c0" name="内部账户激活与关闭" code="300116" action="Trade.Internal.T300116"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="75ae28e5813f4fc88d72cb60c52069aa" name="内部账户定向查询" code="300120" action="Trade.Internal.T300120"  />
+    </category>
+    <category id="f8c437f58c3b44a383f8f3b0d9f9357c" name="公共业务"  >
+      <trade id="8700880851544f8fa1d84420a9621713" name="收费业务" code="300206" action="Trade.Internal.T300206"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="f0036ffe78d3403caf4d3bf87a9f3631" name="现金管理" code="300208" action="Trade.Internal.T300208"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="c9cfa68766c44769a8bb6445707f2545" name="内部凭证管理" code="300210" action="Trade.Internal.T300210"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="f017cee00ebb48d5ba8b22e12a255038" name="客户凭证管理" code="300211" action="Trade.Internal.T300211"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="5d66f09bea71470fb449b85d8080005a" name="客户凭证领用" code="300212" action="Trade.Internal.T300212"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="a99c0149f4904160a979330abda35fe7" name="ATM吞卡登记" code="300213" action="Trade.Internal.T300213"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ff5ff5d7d072413196b78de83e59146e" name="ATM吞卡交接" code="300214" action="Trade.Internal.T300214"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="72c2bf1ce33e4091aadd9fe16089b79e" name="ATM吞卡后续处理" code="300215" action="Trade.Internal.T300215"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="8f98e73b33fd45aabbd73d7bced246f1" name="待销毁卡收入" code="300216" action="Trade.Internal.T300216"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="c9bf63c9b69546f48d4118877170e0df" name="待销毁卡上缴" code="300217" action="Trade.Internal.T300217"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="cf7a8c4740954754bb5d0051829aa6e5" name="待销毁卡上缴接收" code="300218" action="Trade.Internal.T300218"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="efd43bef9d774f048234cacf881867c1" name="待销毁卡销毁" code="300219" action="Trade.Internal.T300219"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="26247ae4145144fe8f52b2dd6232b835" name="内部凭证销毁" code="300220" action="Trade.Internal.T300220"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="59388b77024b431c8af92123e43f8e7f" name="待销毁卡交接" code="300221" action="Trade.Internal.T300221"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="f17c2cb1ae5f40339699a6e029d255fb" name="个人网银UKey出售" code="300222" action="Trade.Internal.T300222"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="36ff940da0684566a95787ff1f8da651" name="身份影像采集维护" code="300223" action="Trade.Internal.T300223"  />
+      <trade id="db38ed0ecfe7474993d6a2ce029240e2" name="单笔联网核查" code="300230" action="Trade.Internal.T300230"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="6a292b91d918411099b762443d6bed5c" name="批量联网核查" code="300231" action="Trade.Internal.T300231"  />
+      <trade id="6a292b91d918411099b762443d6bed5d" name="批量报表打印" code="300232" action="Trade.Internal.T300232"  />
+      <trade id="6a292b91d918411099b762443d6bed5e" name="客户印鉴关联" code="300233" action="Trade.Internal.T300233"  />
+    </category>
+    <category id="e1ebdae9377b4cd0a5b281a61687f561" name="错账冲正"  >
+      <trade id="0daeb1c680764197adf100fb31243e01" name="一般错账冲正" code="300301" action="Trade.Internal.T300301"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="e7148feb66084c288b43e0e2671004bb" name="一般错账冲正复核" code="300302" action="Trade.Internal.T300302"  />
+      <trade id="368400ddfc934c5388bc3ee5c0552f86" name="贷款错账冲正" code="300303" action="Trade.Internal.T300303"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="f233feb257df4c63ae40b1cc4cd8d38c" name="贷款冲正与补记" code="300304" action="Trade.Internal.T300304"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="52d162c6e21042e885846a48638d1f77" name="一般冲正与补记" code="300305" action="Trade.Internal.T300305"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="c12d7d7ae8c343d5ab9f63630658e4fb" name="积数利率调整" code="300333" action="Trade.Internal.T300333"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+    </category>
+    <category id="51487792187a456c8cc6f56fb0d92d44" name="ATM管理"  >
+      <trade id="c1a355654e9a4c8f8522023debeebdc2" name="ATM加钞登记" code="300401" action="Trade.Internal.T300401"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="9b5a98efa27e4a9190b9720564e9dfca" name="ATM加钞撤销" code="300402" action="Trade.Internal.T300402"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="03909fd64f2a452a88ca566610c0ca6e" name="ATM清钞确认" code="300403" action="Trade.Internal.T300403"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="4d7026ba459a48ffafa6e7f9c0df7fff" name="ATM强制清机" code="300404" action="Trade.Internal.T300404"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="49c3f4867cfc423aab37df49d52327ae" name="ATM长短款处理" code="300405" action="Trade.Internal.T300405"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="1f33c769619c411e83d5658593de9b2d" name="ATM加清钞查询" code="300410" action="Trade.Internal.T300410"  />
+      <trade id="dc20bd40adee47178dd56343d8f28ac4" name="ATM流水查询" code="300411" action="Trade.Internal.T300411"  />
+    </category>
+    <category id="d77e89d830d5446ab0824bc46d869767" name="假币处理"  >
+      <trade id="a481fa15580b49e3a4b1317f3253d4c1" name="假币信息登记" code="300501" action="Trade.Internal.T300501"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="e1d72e3991bf45fc9e30d84656a1983e" name="假币冲销" code="300502" action="Trade.Internal.T300502"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="51c8a222551f4889832f87f47c807adb" name="假币上缴" code="300503" action="Trade.Internal.T300503"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="dec49505e12f4aee92ceacc5282bb345" name="假币管理员接收" code="300509" action="Trade.Internal.T300509"  />
+      <trade id="e756b1aac7364e2db22cdd2312e3566e" name="假币上缴入库" code="300504" action="Trade.Internal.T300504"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="3e4c4e6cb07e4e679af3d19cd8f8fddd" name="假币报送处理" code="300505" action="Trade.Internal.T300505"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="3155fa42ec3d42ecb3fec3dc15cdbbd9" name="反假币信息对比结果查询" code="300506" action="Trade.Internal.T300506"  />
+      <trade id="1bfc2871b03f4f02be97ec0b611f92c0" name="假币出库" code="300507" action="Trade.Internal.T300507"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="b6e6eeafda3f40ab8565dcd07c5540ba" name="上报假币信息导出" code="300508" action="Trade.Internal.T300508"  />
+      <trade id="395a3019554b4ceb91f73482d341eef4" name="假币信息查询" code="300510" action="Trade.Internal.T300510"  />
+    </category>
+    <category id="d77e89d830d5446ab0824bc46d869762" name="残损币处理"  >
+      <trade id="e756b1aac7364e2db22cdd2312e3526e" name="残损币兑换" code="300701" action="Trade.Internal.T300701"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="e756b1aac7364e2db12cdd2312e3526e" name="残损币上缴" code="300702" action="Trade.Internal.T300702"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="e756b1aac7364e2db12cdd2322e3526e" name="残损币收缴" code="300703" action="Trade.Internal.T300703"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="e756b1aac7364e2db12cdd2121e3526e" name="残损币管理员接收" code="300706" action="Trade.Internal.T300706"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="e756b1aac7364e2db12cdd2322e35266" name="残损币出库" code="300704" action="Trade.Internal.T300704"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="e756b1aac7364e2db12cdd2122e3526e" name="残损币查询" code="300705" action="Trade.Internal.T300705"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+    <category id="4dfb87d7e3ee49498377ef247f4a8306" name="VTM"  >
+      <trade id="194eac62ba314b18967fb31b07fd0de4" name="VTM装卡登记" code="300801" action="Trade.Internal.T300801"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="dc12702e2cf54278a0db662b627f651e" name="VTM装卡登记撤销" code="300802" action="Trade.Internal.T300802"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="7899281869924d35afb3a24369951f39" name="VTM废卡清卡处理" code="300803" action="Trade.Internal.T300803"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="372ebad071d64d3290e3f571eaaec5d2" name="VTM清卡确认" code="300804" action="Trade.Internal.T300804"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="f761483b56c046ffa6d645f180948dd5" name="VTM清装卡查询" code="300810" action="Trade.Internal.T300810"  />
+    </category>
+    <category id="32829e214a744b6bb28cf6bfae9e505a" name="代保管品"  >
+      <trade id="604a1c45286f4c26a43da70fed4a60ca" name="代保管品记账" code="300601" action="Trade.Internal.T300601"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="cb3466d4661c4587854dca0879f1982d" name="代保管品销账" code="300602" action="Trade.Internal.T300602"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="4a98a7c0076f4df3987fb4f8dab2873d" name="代保管品查询" code="300603" action="Trade.Internal.T300603"  />
+    </category>
+    <category id="01d53cb7a99d4f8886f22adba05af936" name="外币处理"  >
+      <trade id="3cbf7b2589024b888ee2a90439b5b2ca" name="外币兑换" code="300901" action="Trade.Internal.T300901"  />
+      <trade id="3a8d70b1f3a040a59b0d86b48f2f00fb" name="外币结汇" code="300902" action="Trade.Internal.T300902"  />
+      <trade id="f2adf0614b0e4aa997a46b1de6df931f" name="外币售汇" code="300903" action="Trade.Internal.T300903"  />
+      <trade id="884900cf91f14fb8b74b7dcc9cfacb9b" name="一般套汇" code="300904" action="Trade.Internal.T300904"  />
+      <trade id="5c014d37f64c463aa2185dfb11bed47b" name="钞转汇" code="300905" action="Trade.Internal.T300905"  />
+      <trade id="50c5d19e12474d5b997d369cc86b6247" name="外币找零" code="300906" action="Trade.Internal.T300906"  />
+      <trade id="8458ba02dfd24c7ca766609406638e61" name="外汇收支通知录入" code="300907" action="Trade.Internal.T300907"  />
+      <trade id="2152b25e6ca547c29301e37535633fdb" name="外汇管理信息录入" code="300908" action="Trade.Internal.T300908"  />
+    </category>
+  </category>
+  <category id="32290198218f44b48d29220294e98fa6" name="票据业务"  >
+    <category id="580ea98059b84af39f559b5714f9032a" name="银行承兑汇票"  >
+      <trade id="608fb6fe6d19440980a05bb2b9a15ec4" name="银行承兑汇票承兑" code="500101" action="Trade.Notes.T500101"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="82482033fc03409ea6c48e97e64909c9" name="银行承兑汇票到期处理" code="500102" action="Trade.Notes.T500102"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="001da3519e4145808bad2506b6258268" name="银行承兑汇票到期支付" code="500103" action="Trade.Notes.T500103"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="dfbb7e07f00945618672332416ff471c" name="银行承兑汇票未用退回" code="500104" action="Trade.Notes.T500104"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="1a27ab5dca824f1589df551ba89bf967" name="银行承兑汇票挂失处理" code="500105" action="Trade.Notes.T500105"  >
+        <metadata value="true" key="isPaymentFee"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="182b03641bb54ba29c5e1c95c408d6c5" name="银行承兑汇票查询" code="500110" action="Trade.Notes.T500110"  />
+      <trade id="49fecdb875ed49faab8deaaae4cf41b0" name="银行承兑协议查询" code="500111" action="Trade.Notes.T500111"  />
+      <trade id="7a951332c10d46d4860a3114a4065501" name="银行承兑汇票挂失查询" code="500112" action="Trade.Notes.T500112"  />
+    </category>
+    <category id="92e46494769f441fb040b013429c21c8" name="委托收款业务"  >
+      <trade id="70f4f1406a834b8290860f8ce9b0bc92" name="发出委托收款" code="500201" action="Trade.Notes.T500201"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="812a8d90b988427ea50ad918c66db8ec" name="收到委托收款" code="500202" action="Trade.Notes.T500202"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="3337349864fe4b2d926f7dd69838646a" name="发出委托收款查询" code="500203" action="Trade.Notes.T500203"  />
+      <trade id="b5081734d73f449ab093cb6312e8e017" name="收到委托收款查询" code="500204" action="Trade.Notes.T500204"  />
+    </category>
+    <category id="97e46494769f441fb040b013429c21c8" name="贴现业务"  >
+      <trade id="70f4f1406a834b8290860f8ce9b0b992" name="贴现协议审核" code="500302" action="Trade.Notes.T500302"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce9b1bc92" name="贴现记账" code="500303" action="Trade.Notes.T500303"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce9b2bc92" name="贴现还款记账" code="500304" action="Trade.Notes.T500304"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1906a834b8290860f8ce9b2bc92" name="贴现信息查询" code="500305" action="Trade.Notes.T500305"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce9b3bc92" name="转贴现转入审核" code="500307" action="Trade.Notes.T500307"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce9b4bc92" name="转贴现转入记账" code="500308" action="Trade.Notes.T500308"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1906a834b8290860f8ce9b4bc92" name="转贴现转入信息查询" code="500309" action="Trade.Notes.T500309"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce9b5bc92" name="转贴现转出录入" code="500310" action="Trade.Notes.T500310"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce9b6bc92" name="无追索权转贴现转出记账" code="500311" action="Trade.Notes.T500311"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce9b7bc92" name="有追索权转贴现转出记账" code="500312" action="Trade.Notes.T500312"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce9b8bc92" name="追索转贴现到期无追索记账" code="500313" action="Trade.Notes.T500313"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce9b9bc92" name="追索转贴现到期有追索记账" code="500314" action="Trade.Notes.T500314"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1906a834b8290860f8ce9b9bc92" name="转贴现转出信息查询" code="500315" action="Trade.Notes.T500315"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce910bc92" name="再贴现信息录入" code="500316" action="Trade.Notes.T500316"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce920bc92" name="再贴现记账" code="500317" action="Trade.Notes.T500317"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1406a834b8290860f8ce930bc92" name="再贴现回购" code="500318" action="Trade.Notes.T500318"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1906a834b8290860f8ce940bc92" name="再贴现信息查询" code="500320" action="Trade.Notes.T500320"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1906a834b8290860f8ce940bc93" name="转贴现打包审核" code="500321" action="Trade.Notes.T500321"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="70f4f1906a834b8290860f8ce940bc94" name="转贴现打包记账" code="500322" action="Trade.Notes.T500322"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+    <category id="11e46494769f441fb040b013429c21c8" name="信证业务"  >
+      <trade id="3337349864fe4b2d926f7dd6983847a" name="国内信用证开证申请审批" code="500400" action="Trade.Notes.T500400"  />
+      <trade id="3337349864fe4b2d926f7d869838646a" name="国内信用证开证" code="500401" action="Trade.Notes.T500401"  />
+      <trade id="3337349864fe4b2d926f7d739838646a" name="国内信用证修改" code="500402" action="Trade.Notes.T500402"  />
+      <trade id="3337349864fe4b2d926f7dd69838647a" name="国内信用证通知录入" code="500403" action="Trade.Notes.T500403"  />
+      <trade id="3337349864fe4b2d926f7ddwse38647a" name="国内信用证通知修改" code="500404" action="Trade.Notes.T500404"  />
+      <trade id="3337349864fe4b2d926f7dd69838648a" name="国内信用证开证行付款" code="500405" action="Trade.Notes.T500405"  />
+      <trade id="3337349864fe4b2d926f7dd69838649a" name="国内信用证议付行付款" code="500406" action="Trade.Notes.T500406"  />
+      <trade id="3337349864fe4b2d926f7dd69838650a" name="国内信用证注销" code="500407" action="Trade.Notes.T500407"  />
+      <trade id="3337349864fe4b2d926f7dd69838651a" name="国内信用证议付还款记账" code="500408" action="Trade.Notes.T500408"  />
+    </category>
+    <category id="11e46494769f441fb040b023429c21c8" name="再贷业务"  >
+      <trade id="3337349864fe4b2d926f7df6983847a" name="再贷款录入" code="500501" action="Trade.Notes.T500501"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="3337349864fe4b2d926f7dm6981444a" name="再贷款记账" code="500502" action="Trade.Notes.T500502"  />
+      <trade id="3337349864fe4b2d926f7do6912345a" name="再贷款还款录入" code="500503" action="Trade.Notes.T500503"  />
+      <trade id="3337349864fe4b2d926f7di69838646a" name="再贷款还款记账" code="500504" action="Trade.Notes.T500504"  />
+      <trade id="333a9864fe4b2d926f7di69838646a" name="再贷款信息查询" code="500505" action="Trade.Notes.T500505"  />
+      <trade id="33d7349864fe4b2d926f7di69838646a" name="再贷款还款信息查询" code="500506" action="Trade.Notes.T500506"  />
+    </category>
+    <category id="dbfd7036b57546d09d2cd07d1bfa1037" name="理财融资平台业务"  >
+      <trade id="8856d225fd0c461c8b6c1905425ddcc7" name="资金池参数维护" code="500601" action="Trade.Notes.T500601"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="dcd7744c7bb0492f956f38cf96844b36" name="资金池成员维护" code="500602" action="Trade.Notes.T500602"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="d36070486f8e427db513855788ac798d" name="资金池拆借利率维护" code="500603" action="Trade.Notes.T500603"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="6a4a475375314b0084313807724ffad0" name="资金池资金归集维护" code="500604" action="Trade.Notes.T500604"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="8debf56152e946f1ac2a860c80feee19" name="资金池内资金划回" code="500605" action="Trade.Notes.T500605"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="14561448dfca443ca024d56414ffb836" name="资金池内拆借" code="500606" action="Trade.Notes.T500606"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="2bcfb67210d641f79b55bcba5d312bd7" name="资金池内拆借还款" code="500607" action="Trade.Notes.T500607"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="e1df3a18b03347e29ca185eda58269eb" name="资金池内拆借停息解停息" code="500608" action="Trade.Notes.T500608"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="57de12a02f73439a99833b8fe3a2785d" name="资金池参数查询" code="500610" action="Trade.Notes.T500610"  />
+      <trade id="831979d1a949402a8cc268447cd7c87d" name="资金池成员查询" code="500611" action="Trade.Notes.T500611"  />
+      <trade id="381994df626143c0b53a843d2347ca2d" name="资金池资金归集签约查询" code="500612" action="Trade.Notes.T500612"  />
+      <trade id="72a597fa70df48bd9e0b679ad671085e" name="资金池资金归集明细查询" code="500613" action="Trade.Notes.T500613"  />
+      <trade id="0cb2c52f69b54b13946c505bffe14c6d" name="资金池内拆借查询" code="500614" action="Trade.Notes.T500614"  />
+      <trade id="5fad69b7cc0241458b8d9bad11d1e240" name="小贷本息代扣签约" code="500620" action="Trade.Notes.T500620"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="3ee7679c9c734a8aa173f67ce056da49" name="小贷本息代扣签约维护" code="500621" action="Trade.Notes.T500621"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+    <category id="69b6707e6cdd4375b7f27c2fe9aee34a" name="保函业务"  >
+      <trade id="a6937cc2e24740dc847ef4e78de9d720" name="保函到期赔偿" code="400301" action="Trade.Credit.T400301"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="3f51b675413741aa8d198f921a48c6eb" name="保函信息查询" code="400302" action="Trade.Credit.T400302"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="3ae58a20ebc64c19b371cd1fb66fa9b3" name="保函协议录入" code="460301" action="Trade.CreditReserve.T460301"  />
+      <trade id="2173e886fa3c4a6f86f5f9861a5fade6" name="保函业务审核" code="460302" action="Trade.CreditReserve.T460302"  />
+      <trade id="a210bbd11f94439ebc48f3fc6cda1fe0" name="保函业务销户" code="460303" action="Trade.CreditReserve.T460303"  />
+    </category>
+  </category>
+  <category id="3188ea1e79c644c1ba72011b6ad2bb42" name="中间业务"  >
+    <category id="4f79123a826544fab2d47df96ace908d" name="代理业务"  >
+      <trade id="2eff0d2153e343e392d1106d701d7211" name="单位代理信息维护" code="600101" action="Trade.Channel.T600101"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="f63523956cb546f7bec0e4497d603573" name="代理业务密钥申请" code="600102" action="Trade.Channel.T600102"  >
+        <metadata value="true" key="isUseVacaControl"/>
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="6eebf50770914a90996e9b779a4e407f" name="个人代扣签约" code="600103" action="Trade.Channel.T600103"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="d596a1f0581b446698284ae1b113530b" name="个人代扣签约维护" code="600104" action="Trade.Channel.T600104"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="23dedde4ee684d99afbf1aba7082328e" name="代理过渡户开户" code="600110" action="Trade.Channel.T600110"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="7322b5c94c1b436ea29f05c6645b8750" name="代发业务资金转入" code="600111" action="Trade.Channel.T600111"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="a5894216fd054da99cb30096aa8fe758" name="代发业务资金退回" code="600112" action="Trade.Channel.T600112"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ef7a8df99f144af3b97eddcfc18d810e" name="代理数据批量导入" code="600113" action="Trade.Channel.T600113"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="087d4a15478345c8ae68c8357d24aaf3" name="批量导入撤销" code="600114" action="Trade.Channel.T600114"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="5a881758fbbe4808bee15d6a40471e71" name="批量记账" code="600115" action="Trade.Channel.T600115"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="04aab4b01bc24753b6af755a0ec99802" name="批量结果查询" code="600116" action="Trade.Channel.T600116"  />
+      <trade id="9b689eeab4a0482ca6d83461915b3c47" name="批量明细查询" code="600117" action="Trade.Channel.T600117"  />
+    </category>
+    <category id="9aee9f410cff4e9b8526b1174565e571" name="IC卡电子现金"  >
+      <trade id="e6d568afc74443bcaea2f29a03828b33" name="电子现金圈存" code="601001" action="Trade.Channel.T601001"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="3686a072c9614319b76d2ed7bb253e81" name="电子现金圈存撤销" code="601002" action="Trade.Channel.T601002"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="4eac5f29d2d844aabc30cf67ddd76619" name="电子现金圈提" code="601003" action="Trade.Channel.T601003"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="d22c82bd8c9945208d728fbfd4064ce4" name="余额上限维护" code="601004" action="Trade.Channel.T601004"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="a4be6c1785464edcb49f5baf3949471a" name="电子现金账户查询" code="601010" action="Trade.Channel.T601010"  />
+      <trade id="19b84252e60d4f448ba7be10821a1f4b" name="电子现金明细查询" code="601011" action="Trade.Channel.T601011"  />
+      <trade id="2a3118dec7d942539423b5ea16ff3e2c" name="IC卡销户申请" code="601020" action="Trade.Channel.T601020"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="5a6237be67a247aa8bfb3b2bf69d5fa3" name="IC卡销户申请查询" code="601021" action="Trade.Channel.T601021"  />
+    </category>
+    <category id="9b5c09b4ae034c48ba8cc85cfc92a022" name="财税库行"  >
+      <trade id="2143418cedfa424aa21388221d38e34c" name="三方协议签约和删除" code="602001" action="Trade.Channel.T602001"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ac29f8e1241647feb09940768957909f" name="三方协议验证和解约" code="602002" action="Trade.Channel.T602002"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="512d1faf53a9438bb1d777a6c8971ed8" name="三方协议交易查询" code="602003" action="Trade.Channel.T602003"  />
+      <trade id="daf920d979a24793b8f5d91c6b46d505" name="扣税交易明细查询" code="602004" action="Trade.Channel.T602004"  />
+      <trade id="8ffa5d25c15e43eb9af8e6540604561a" name="对账结果查询" code="602005" action="Trade.Channel.T602005"  />
+      <trade id="98f6908a0b214ecf9d74ef8b3179802f" name="对账差错查询" code="602006" action="Trade.Channel.T602006"  />
+      <trade id="9d540098624c4657b59cd7f08305c3e4" name="人工重新对账" code="602007" action="Trade.Channel.T602007"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="3c55af98ac8b458da9ec8ad54319837f" name="人工清算" code="602008" action="Trade.Channel.T602008"  >
+        <metadata value="true" key="isAuth"/>
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="4cf7ae696d3c47c7bc3ef34752af1082" name="清算状态查询" code="602009" action="Trade.Channel.T602009"  />
+      <trade id="0df99b5357814d378cc09bbe1ddc5e54" name="电子缴税付款凭证查询打印" code="602020" action="Trade.Channel.T602020"  />
+      <trade id="58e7ac945c3d4433a1b6e7a5f50965ca" name="自由格式报文" code="602021" action="Trade.Channel.T602021"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="460a92fe6ce241829f59bda523178138" name="自由格式报文查询" code="602022" action="Trade.Channel.T602022"  />
+      <trade id="2575afcbf5c047929e4f535c40160c17" name="连接测试" code="602023" action="Trade.Channel.T602023"  />
+      <trade id="2b33ff43730e40b4968f5486ed635297" name="TIPS系统状态查询" code="602024" action="Trade.Channel.T602024"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="014187d99e3a47c7a9cebdc3e9432269" name="国库代码查询" code="602025" action="Trade.Channel.T602025"  />
+      <trade id="892720fc16f9448e92b01ec0f6292411" name="征收机关代码查询" code="602026" action="Trade.Channel.T602026"  />
+      <trade id="2bad5b2ad6824e8f89c0a4aefd7773a7" name="税种税目明细查询" code="602027" action="Trade.Channel.T602027"  />
+      <trade id="bfb09c49efc84310b6efffbf023a271f" name="银行端缴款业务申请录入" code="602028" action="Trade.Channel.T602028"  />
+      <trade id="57abd18901684fab969f662b42f752c4" name="银行申报查询" code="602029" action="Trade.Channel.T602029"  />
+      <trade id="7fc5b7fb2b0e41a9b8703b7d27f23bfd" name="登录TIPS交易" code="602030" action="Trade.Channel.T602030"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="16a7e32bce9b4d548249beb65b8bcc31" name="从TIPS退出交易" code="602031" action="Trade.Channel.T602031"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+    <category id="7a8379322c0749969daa7cefa0e29051" name="银联业务"  >
+      <trade id="54b3c5d49d0d4a0092b14ac2f320f30c" name="银联管理交易" code="603001" action="Trade.Channel.T603001"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="0715af3b7aeb45e1bfdfdf05c6acdb7b" name="银联业务查询" code="603002" action="Trade.Channel.T603002"  />
+      <trade id="5c981f0f5b0a4a6e8e35f748b2671f28" name="银联明细查询" code="603003" action="Trade.Channel.T603003"  />
+      <trade id="5d227d6c2e11409caf96901bb081bfbc" name="对账结果查询" code="603005" action="Trade.Channel.T603005"  />
+      <trade id="e9979cccc5bf4d028ff54680f0237d90" name="预授权查询" code="603010" action="Trade.Channel.T603010"  />
+      <trade id="4e189caa044f4a48ae751a0f8cfc1b61" name="预授权解除" code="603011" action="Trade.Channel.T603011"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="8689d4c8c22a4966adaf45d2c181fbdc" name="ATM终端信息维护" code="603012" action="Trade.Channel.T603012"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+    </category>
+  </category>
+  <category id="14a0069d39b5468189996ffbe6af4f8c" name="查询打印"  >
+    <category id="6ce747b3a5554c07a29117824fac7e1a" name="登记簿查询"  >
+      <trade id="b0113bc746094fc6ac01ca9abbff45f8" name="开销户登记簿查询" code="700101" action="Trade.Search.T700101"  />
+      <trade id="dac3de3f27054ab8908aa9ef200d265b" name="挂失登记簿查询" code="700102" action="Trade.Search.T700102"  />
+      <trade id="b71d8b8e5a86420db707e5b372bdbeb1" name="冻结止付登记簿查询" code="700103" action="Trade.Search.T700103"  />
+      <trade id="7a203e414b11469e823295a44c9bf341" name="扣划登记簿查询" code="700104" action="Trade.Search.T700104"  />
+      <trade id="2d2ad067bee24e519d54973e311b0233" name="更换凭证登记簿查询" code="700105" action="Trade.Search.T700105"  />
+      <trade id="7324774718ec4e289b071ca70e26a504" name="现金登记簿查询" code="700107" action="Trade.Search.T700107"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="5fd7d2a002ae44f4b76127cd76b2cd17" name="电子回单登记薄查询" code="700108" action="Trade.Search.T700108"  />
+      <trade id="67bec6cfbf994aa3aef1690eff209f88" name="吞卡登记薄查询" code="700109" action="Trade.Search.T700109"  />
+      <trade id="dcf12c5552564d97992c4e7b9aa94202" name="吞卡交接登记薄查询" code="700110" action="Trade.Search.T700110"  />
+    </category>
+    <category id="39a985b28ec546a9b15ccaa29f696bd0" name="公共查询"  >
+      <trade id="ed414aa940c44053ade54114fcd3ced2" name="外部账户查询" code="700201" action="Trade.Search.T700201"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="0089f420e9f240f8aa055d7a0dbe283d" name="内部账户查询" code="700202" action="Trade.Search.T700202"  />
+      <trade id="5d8e81d26f3a4ad9abae114496ae7fbd" name="交易流水查询" code="700204" action="Trade.Search.T700204"  />
+      <trade id="b06c5b5019db4e9487c35b158a3e0ddb" name="柜员凭证查询" code="700205" action="Trade.Search.T700205"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="5a8d3f19dbd74cbebbe80e6e4e022228" name="柜员状态及钱箱查询" code="700206" action="Trade.Search.T700206"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="83c9dae720da4994840e15da92cd67ac" name="收费明细查询" code="700207" action="Trade.Search.T700207"  />
+      <trade id="0da750a061fd462680d650ceb05e7a21" name="客户凭证挂失查询" code="700208" action="Trade.Search.T700208"  />
+      <trade id="f6c0fa4dc9f5460db500ea5e6e55dcaf" name="账户信息维护查询" code="700209" action="Trade.Search.T700209"  />
+      <trade id="66823116428e4842ae584bdef4732903" name="客户综合资产查询" code="700210" action="Trade.Search.T700210"  />
+      <trade id="d7c23ee043f5492a87d2ed9cc17e5eaf" name="机构库存现金查询" code="700211" action="Trade.Search.T700211"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="86f33e7938f94d58894fa29b5ff4cfd7" name="平台交易流水查询" code="700212" action="Trade.Search.T700212"  />
+      <trade id="7a981083145940579001d72b05dfcaf2" name="开户统计查询" code="700220" action="Trade.Search.T700220"  />
+      <trade id="9f4b0400446244a9832a9c68299a5d75" name="网点存款实时查询" code="700221" action="Trade.Search.T700221"  />
+      <trade id="66e0d5ac386948c4a6bc982056d61534" name="介质账户查询" code="700224" action="Trade.Search.T700224"  />
+      <trade id="ef021ffbd6c44858b47ebe7496c2c950" name="按揭贷款计算" code="700225" action="Trade.Search.T700225"  />
+      <trade id="0a259194473e40d9938eb4acf7c161bd" name="普通贷款利息测算" code="700226" action="Trade.Search.T700226"  />
+      <trade id="00c03480f30c42199a746fd736e1b6f9" name="普通存款利息测算" code="700227" action="Trade.Search.T700227"  />
+      <trade id="b259032a3b3d42248afc10cf5b7bf999" name="自动转存利息查询" code="700228" action="Trade.Search.T700228"  />
+      <trade id="c5df0a7cc1b94fa4b6c5ceaa5d54a356" name="定期计提利息查询" code="700229" action="Trade.Search.T700229"  />
+    </category>
+    <category id="39a985b28ec546a9b15ccaa29f696bd1" name="公共参数查询"  >
+      <trade id="da705ebdc7ed44c388f1344f81a1b774" name="账户产品码查询" code="700301" action="Trade.Search.T700301"  />
+      <trade id="9b27cfffab6e4050bff58e36ef484e3e" name="费率表查询" code="700303" action="Trade.Search.T700303"  />
+      <trade id="ac56509f26274c4c9a1fb19b4a93dcf9" name="利率表查询" code="700304" action="Trade.Search.T700304"  />
+      <trade id="8f9cea9c33e6417f9fccb8cdcb029666" name="交易码信息查询" code="700305" action="Trade.Search.T700305"  />
+      <trade id="ecf47c1e36344601861a9525b219442d" name="机构信息查询" code="700306" action="Trade.Search.T700306"  />
+    </category>
+    <category id="33643395c80c46cbb6aabe5fcc75b321" name="对账单打印"  >
+      <trade id="f0828156def346c0bbd0cf4ad8a588b6" name="个人对账单查询打印" code="700401" action="Trade.Search.T700401"  />
+      <trade id="6993f916ad7442eca87e2e755cf4bd0b" name="对公对账单查询打印" code="700402" action="Trade.Search.T700402"  />
+      <trade id="e0d5825f60cb4f9bb0eb6cfe138cc3d1" name="对公对账单批量查询打印" code="700403" action="Trade.Search.T700403"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+  </category>
+  <category id="678757720c434be4a60cf205e90412ad" name="理财业务"  >
+    <category id="772678750c434be4a60cf205e90412ad" name="理财业务"  >
+      <trade id="ae4f18be338b1110ad39eb502588d705" name="客户风险评估" code="181000" action="Trade.Financial.T181000"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae4f18be338b1110ad39eb502588d706" name="理财预约" code="181001" action="Trade.Financial.T181001"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae4f18be338b1110ad39eb509888d705" name="理财认购" code="181002" action="Trade.Financial.T181002"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae4f18be338b1010ad39eb509888d705" name="理财申购" code="181003" action="Trade.Financial.T181003"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae4128dd338b10111139eb576888d705" name="理财赎回" code="181007" action="Trade.Financial.T181007"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dd338b10111139eb576866d705" name="理财宣布募集失败" code="181009" action="Trade.Financial.T181009"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dd338b10111139eb576866d706" name="理财宣布成立" code="181010" action="Trade.Financial.T181010"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dd338b10111139eb576616d705" name="理财提前中止" code="181011" action="Trade.Financial.T181011"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dd338b101111323b576616d705" name="理财申购确认" code="181012" action="Trade.Financial.T181012"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dd338b1011113213576616d705" name="理财赎回确认" code="181013" action="Trade.Financial.T181013"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dd338b1011113de3576616d705" name="理财确认归还本息" code="181014" action="Trade.Financial.T181014"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dd338b10111101e3533616d705" name="理财抵押" code="181016" action="Trade.Financial.T181016"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dd338b10111881e3530116d705" name="理财转让" code="181018" action="Trade.Financial.T181018"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dde18b10111881e3530116d705" name="理财挂账处理" code="181019" action="Trade.Financial.T181019"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dde18b1011188873530116d705" name="理财产品收益预算" code="181021" action="Trade.Financial.T181021"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+    <category id="772678750c434be4a60cf111e90412ad" name="理财撤销"  >
+      <trade id="ae4128be338b1010ad39eb509888d705" name="理财预约撤销" code="181004" action="Trade.Financial.T181004"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae4128be338b10111139eb509888d705" name="理财认购撤销" code="181005" action="Trade.Financial.T181005"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae4128dd338b10111139eb509888d705" name="理财申购撤销" code="181006" action="Trade.Financial.T181006"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dd338b10111139eb576888d705" name="理财赎回撤销" code="181008" action="Trade.Financial.T181008"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+    <category id="772678750c434be1160cf205e90412ad" name="理财查询"  >
+      <trade id="ae8728dde18b1011188353532716d705" name="理财客户信息查询" code="181023" action="Trade.Financial.T181023"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae8728dde18b1011188355532716d705" name="理财购买登记簿查询" code="181024" action="Trade.Financial.T181024"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae872e2de18b1011188355532716d705" name="理财赎回登记薄查询" code="181025" action="Trade.Financial.T181025"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae872e2de18b1011188355532006d705" name="理财产品参数查询" code="181026" action="Trade.Financial.T181026"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="ae872e2de18be911188355532006d705" name="理财归还收益本金查询" code="181027" action="Trade.Financial.T181027"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+
+    </category>
+  </category>
+  <category id="6e58d7dce31748a1aa174b9db7049d86" name="授信管理"  >
+    <category id="815282cba41b4e3d89668833bb1ce9e2" name="贷款业务"  >
+      <trade id="d9c991c298fa4233935cea14134e922f" name="开立贷款账号" code="460101" action="Trade.CreditReserve.T460101"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="1512c15d3adb4edaaa7892b4086dd7f9" name="普通贷款借据录入" code="460102" action="Trade.CreditReserve.T460102"  />
+      <trade id="8110925b9de1487da65da9305db847d3" name="贷款开户" code="460104" action="Trade.CreditReserve.T460104"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="29719dda52674486b873de6a1a372a83" name="贷款受托支付审批" code="460105" action="Trade.CreditReserve.T460105"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="29719dda52674486b873de6a1a372a3" name="贷款放款" code="460107" action="Trade.CreditReserve.T460107"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="4af7c638b9a04f5db2d3ab816957d104" name="贷款还款" code="400101" action="Trade.Credit.T400101"  />
+      <trade id="e13fb3664bdd49aea2412293d14bb41b" name="贷款销户" code="400102" action="Trade.Credit.T400102"  />
+      <trade id="e13fb3664bdd49aia2412293d14bb41b" name="贷款单户结息" code="400103" action="Trade.Credit.T400103"  />
+      <trade id="7a489f72d4514e2da0fed5e50609aed1" name="卡内质押签约维护" code="400130" action="Trade.Credit.T400130"  />
+      <trade id="958d18fd6db540af8ab4212ffb37ea67" name="卡内质押柜面放款" code="400131" action="Trade.Credit.T400131"  />
+      <trade id="958d18fd6db540af8ab4212ffb37ea68" name="存贷通业务签约" code="400133" action="Trade.Credit.T400133"  />
+      <trade id="4a01320cfcdc4c7a8310bf7833c3ce74" name="不良贷款免息" code="460108" action="Trade.CreditReserve.T460108"  />
+      <trade id="2b1d16cfe52a4ef4912f6b6b2affb006" name="循环贷款签约/解约" code="460109" action="Trade.CreditReserve.T460109"  />
+      <trade id="993b8855c29843458657ff2e35824a1d" name="银团贷款协议维护" code="460111" action="Trade.CreditReserve.T460111"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="b38e432db9f04b0cbaf5a2683019fa50" name="委托协议登记" code="460112" action="Trade.CreditReserve.T460112"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="d8f37d659128491f8252dbfdf1f41c8c" name="押品信息管理" code="460113" action="Trade.CreditReserve.T460113"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="2a264cd4bab244e191c76e8dd598589b" name="合同押品关联" code="460114" action="Trade.CreditReserve.T460114"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="c8520a2bf740470faee9a244ce086036" name="贷款信息维护" code="460117" action="Trade.CreditReserve.T460117"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="c8520a2bf740471faee9a244ce086036" name="贷款手工计划调整" code="460118" action="Trade.CreditReserve.T460118"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="4482870f6a8f47ec9c686648a61e87ac" name="贷款展期" code="460120" action="Trade.CreditReserve.T460120"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="b694b99cece340a0ad7525ea0e577308" name="贷款停息/解除停息" code="460121" action="Trade.CreditReserve.T460121"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="20a3d785aa514d84bb4c836fdb154ffe" name="贷款形态调整" code="460122" action="Trade.CreditReserve.T460122"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="7c48abc5b61d4a6cbf05483ebed08977" name="贷款本金核销" code="460123" action="Trade.CreditReserve.T460123"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="b5016fde939844bfbfc6021726b9f27f" name="贷款利息核销" code="460124" action="Trade.CreditReserve.T460124"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="b5016fde939844bfbfc6021226b9f27f" name="核销贷款本金收回" code="460125" action="Trade.CreditReserve.T460125"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="b5016fde939844bfbfg6021726b9f27f" name="核销贷款利息收回" code="460126" action="Trade.CreditReserve.T460126"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+    <category id="668b5c7450ec41e78bf53a4811189e46" name="贷款查询"  >
+      <trade id="0c47202fe8734d63b5cb2f85ca8e1eb6" name="贷款信息综合查询" code="400140" action="Trade.Credit.T400140"  />
+      <trade id="135432194a0345259692e113aa2f7ea3" name="还款计划查询" code="400141" action="Trade.Credit.T400141"  />
+      <trade id="054519088eb64a089b1b9a71877d4022" name="银团贷款协议查询" code="400142" action="Trade.Credit.T400142"  />
+      <trade id="46d0707900fb4d848f6499a07bfc1d4a" name="委托贷款查询" code="400143" action="Trade.Credit.T400143"  />
+      <trade id="2b6c11f44d9f4567a364facbfdd65d21" name="贷款展期登记簿" code="400144" action="Trade.Credit.T400144"  />
+      <trade id="c4f36621f09d460fb341db2ca4b087a7" name="按揭贷款欠款查询" code="400145" action="Trade.Credit.T400145"  />
+      <trade id="fcf4b3282b2b4baea843a6617bf1b1f0" name="非按揭贷款欠款查询" code="400146" action="Trade.Credit.T400146"  />
+      <trade id="18b15144a0ba4e5691ac18c7cbd95cc8" name="欠款查询" code="400147" action="Trade.Credit.T400147"  />
+      <trade id="236ac41ce03149dd86680e47a69df506" name="借据信息查询" code="400148" action="Trade.Credit.T400148"  />
+      <trade id="236ac41ce03149dd84680e47a69df506" name="循环贷款签约查询" code="400149" action="Trade.Credit.T400149"  />
+      <trade id="236ao41ce03149dd84680e47a69df506" name="存贷通信息查询" code="400150" action="Trade.Credit.T400150"  />
+      <trade id="fd1cebdf6bc248629a948a2c0e5c8a90" name="抵质押品信息查询" code="460115" action="Trade.CreditReserve.T460115"  />
+    </category>
+    <category id="85523cbda2934e91833314452991d56a" name="承兑贴现"  >
+      <trade id="c095c0e0aa8349aaa549ceaea9a8b1c2" name="承兑汇票协议维护" code="460201" action="Trade.CreditReserve.T460201"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="3c9ad0b4877a48a09a986f8d78af5036" name="承兑汇票协议审核" code="460202" action="Trade.CreditReserve.T460202"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="97ca2eed979b4ad39b1164ff3df9c9d6" name="承兑汇票录入" code="460203" action="Trade.CreditReserve.T460203"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="f71b15daca864900ac466e96176727fe" name="贴现协议录入" code="460210" action="Trade.CreditReserve.T460210"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+  </category>
+  <category id="ad9fc99a282648e2a570a13fbac86f26" name="隐藏公共" isvisible="false" >
+    <trade id="234fb382c3e447b18575d114ec0ff65b" name="修改密码" code="990101" action="Trade.Public.T990101"  />
+    <trade id="4debbfc3066e476caca5857957b758b8" name="补打凭证" code="990102" action="Trade.Public.T990102"  >
+      <metadata value="true" key="isAuth"/>
+    </trade>
+    <trade id="8a001e2dc85449c9af1771eea1e80784" name="当日抹账" code="990103" action="Trade.Public.T990103"  >
+      <metadata value="true" key="isAuth"/>
+    </trade>
+    <trade id="1b172fe2246c416ab0a73a3103bdd358" name="任务清单" code="990104" action="Trade.Public.T990104"  />
+    <trade id="f9eb3801a20b40d28d5cf4f6112dec21" name="授权审批" code="990105" action="Trade.Public.T990105"  />
+    <trade id="62cfbac2377b4abcbd4ce07bef72ad65" name="复核审批" code="990106" action="Trade.Public.T990106"  />
+    <trade id="e35f97022f614069b8cbad955a8d512d" name="清单打印" code="990108" action="Trade.Public.T990108"  />
+    <trade id="ea47e0b2d5c1440f8fdfd93881779421" name="产品视图" code="990203" action="Trade.Public.T990204"  />
+    <trade id="ea47e0b2d5c1440f8fdfd93881779422" name="远程授权" code="990111" action="Trade.Public.T990111"  />
+  </category>
+  <category id="1251bb4546eb41a4b4854b288276be5e" name="参数管理"  >
+    <category id="af25dcb744f64cff846b5e400ab687b2" name="系统管理"  >
+      <trade id="95acebd58edc4b5ea8a48f53e0d0fd1a" name="错误信息维护" code="800101" action="Trade.Parameter.T800101"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="2b11acd3fd214ec0abd2470ea101f891" name="终端号管理" code="800102" action="Trade.Parameter.T800102"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="53358ae67a164d549ba564e5791d220c" name="柜员参数设置" code="800109" action="Trade.Parameter.T800109"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="53358ae676664d549ba564e5791d220c" name="交易规则配置" code="800121" action="Trade.Parameter.T800121"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+
+      <trade id="53358ae676664d549ba564e5791d220d" name="柜员日志查看" code="800122" action="Trade.Parameter.T800122"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+    </category>
+    <category id="1a4f44dbb5604b5b9eaf37cda348f92f" name="运维管理"  >
+      <trade id="ecec786712344e83aaa08debcbe2d76c" name="机构管理" code="800201" action="Trade.Parameter.T800201"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="b7e9ae09aa0f47039e6920382c71804d" name="柜员管理" code="800202" action="Trade.Parameter.T800202"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="59f77652a6bd4e60be001a58c9cf08d4" name="角色管理" code="800203" action="Trade.Parameter.T800203"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="9a7a2c393bc849d58e933a1d6bcf4efe" name="菜单管理" code="800204" action="Trade.Parameter.T800204"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="85ecdf4ecd7e431687572f591493dbf7" name="功能管理" code="800205" action="Trade.Parameter.T800205"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="eacb561a8f5349f99c7ad14da63f2f7f" name="帮助文件编辑" code="800210" action="Trade.Parameter.T800210"  />
+      <trade id="c100f4ca699248a8891cf13e36c35b46" name="授权级别管理" code="800211" action="Trade.Parameter.T800211"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="8a4bda66c6384bc4a2cb8c37924d3169" name="密码更改查询" code="800212" action="Trade.Parameter.T800212"  />
+      <trade id="8d4a30207ee44434adc858e347c1f970" name="机构柜员强制签退" code="800214" action="Trade.Parameter.T800214"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="8959cdf3246843bba36eec4b2e510b4a" name="节假日管理" code="800215" action="Trade.Parameter.T800215"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="fd4e94e1d0b54357952cf5a288b92e3a" name="联网核查停运处理" code="800216" action="Trade.Parameter.T800216"  />
+      <trade id="582726aef7b6403880730f9af2004603" name="机构关门通知维护" code="800217" action="Trade.Parameter.T800217"  />
+      <trade id="a561bae1007145c082a7d1a85e3cd549" name="凭证信息管理" code="800221" action="Trade.Parameter.T800221"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="002e909703e74b24a5b5398c62c8870f" name="凭证打印管理" code="800222" action="Trade.Parameter.T800222"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="4bece1f62f814fad97231912ca9d1c1c" name="法定节假日" code="800209" action="Trade.Parameter.T800209"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="33a29bf5be964adfb0baeacec9cb3bdc" name="账号生成规则" code="800207" action="Trade.Parameter.T800207"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+    </category>
+    <category id="eae3bcfd58ef444a95adbbeb3ebcbefe" name="授权复核管理"  >
+      <trade id="333565e599694f9cb446b7f3d8a42861" name="授权公式管理" code="800301" action="Trade.Parameter.T800301"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="4c1faabc86a84a2abf6bfac382e591cf" name="授权记录查询" code="800302" action="Trade.Parameter.T800302"  />
+      <trade id="355beeffc948404690ccbad80cf0d603" name="授权权限转移" code="800310" action="Trade.Parameter.T800310"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="30d51699d6d94c539eee7f5686350f31" name="授权转移查询" code="800311" action="Trade.Parameter.T800311"  />
+
+      <trade id="30d51699d6d94c539eee7f5686350f32" name="复核公式管理" code="800320" action="Trade.Parameter.T800320"  />
+      <trade id="30d51699d6d94c539eee7f5686350f33" name="复核查询" code="800321" action="Trade.Parameter.T800321"  />
+    </category>
+    <category id="4a1f6f8652ee43918a8ca90087835192" name="日终管理"  >
+      <trade id="fdb6e910100a45eb865106117958fc2f" name="日终批量流程配置" code="800401" action="Trade.Parameter.T800401"  />
+      <trade id="1d9cadfa6a3c4093aa1bc5b8e6cc0f6a" name="启动日终批量" code="800402" action="Trade.Parameter.T800402"  />
+      <trade id="33a29bf5be964adfb0baeacec00b3bdc" name="启动日终批量" code="800700" action="Trade.Parameter.T800700"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+    </category>
+    <category id="a29c674fa6e6435599f3fd8a26106ef0" name="核心参数管理"  >
+      <trade id="8d89b04272ff4a4391110d7b77c5a411" name="存款产品工厂" code="800001" action="Trade.Parameter.T800001"  >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="8d11104272ff4a439f720d7b77c5a422" name="币种" code="800002" action="Trade.Parameter.T800002"  />
+      <trade id="8d89b04272ff41119f720d7b77c5a433" name="渠道" code="800003" action="Trade.Parameter.T800003"  />
+      <trade id="8d89b04272ff4a439f72111b77c5a444" name="介质" code="800004" action="Trade.Parameter.T800004"  />
+      <trade id="8d89b04272ff4a111f720d7b77c5a41a" name="内部产品工厂" code="800012" action="Trade.Parameter.T800012"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="8d89b11172ff4a439f720d7b77c5a41b" name="理财产品工厂" code="800013" action="Trade.Parameter.T800013"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="8d89b04272f111439f720d7b77c5a41c" name="贷款产品工厂" code="800014" action="Trade.Parameter.T800014"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="8d89b04272ff4a439f720d1b77c11111" name="利率工厂" code="800015" action="Trade.Parameter.T800015"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="8d89b04272ff4a439f720d7b77c51111" name="收费工厂" code="800016" action="Trade.Parameter.T800016"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+
+      <trade id="8d89b04272ff41119f720d7b77c51112" name="介质维护" code="800019" action="Trade.Parameter.T800019"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="7bfe715a7ddd4ba78de1ca2169cea6cb" name="产品发布与下架" code="800020" action="Trade.Parameter.T800020"  />
+      <trade id="63b0e57633da4707bc34c7b2f87f2c2c" name="数据字典维护" code="800106" action="Trade.Parameter.T800106"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+
+      <trade id="d01fef52acbb408784fda12c2c1523d6" name="公共参数维护" code="800110" action="Trade.Parameter.T800110"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="b1156b3c712143a6b33072014db86eb6" name="日志维护" code="800111" action="Trade.Parameter.T800111"  />
+      <trade id="b1156b3c712143a6b33072013db86eb6" name="交易维护" code="800117" action="Trade.Parameter.T800117"  />
+      <trade id="b1156b3c722143a6b33072013db86eb6" name="子交易维护" code="800118" action="Trade.Parameter.T800118"  />
+      <trade id="3cc48d36c687476eb45667d45d6758b6" name="公共机构管理" code="800206" action="Trade.Parameter.T800206"  />
+      <trade id="301f0164ace84019965a04c23391e681" name="基准利率维护" code="800502" action="Trade.Parameter.T800502"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="43727c64b25f4723a39ac88627b66644" name="币种维护" code="800504" action="Trade.Parameter.T800504"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="d78992ebd8ea43198fe4336506a581e0" name="凭证产品" code="800506" action="Trade.Parameter.T800506"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="d78992ebd81277798fe4336506a581e0" name="利息税维护" code="800507" action="Trade.Parameter.T800507"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+
+      <trade id="c32f67b8f3e9472d9aa023ad31784198" name="节日管理" code="800517" action="Trade.Parameter.T800517"  />
+      <trade id="c588b3016a9942e1bd01acc2befcfb94" name="产品限额参数维护" code="800525" action="Trade.Parameter.T800525"  >
+        <metadata value="true" key="isAuth"/>
+      </trade>
+      <trade id="966f1e0a5e6e43a88a664ac409a8ebad" name="客户限制定义管理" code="800526" action="Trade.Parameter.T800526"  />
+      <trade id="219c2c04a88143e2906f334c4b67ae54" name="地区代码管理" code="800527" action="Trade.Parameter.T800527"  />
+      <trade id="ed18861e8f0f4e019d887fd5ca6f995f" name="理财产品参数维护" code="800540" action="Trade.Parameter.T800540"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="b4a3fdcedb5f4ab7884d8175cbfefbb6" name="理财产品机构配额维护" code="800541" action="Trade.Parameter.T800541"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="bfb31cd27647436d8eb04d33e9fec7d0" name="理财产品浮动利率维护" code="800542" action="Trade.Parameter.T800542"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="dc1628e3b9794082aa82d5c16187cb5e" name="理财资产账户配置维护" code="800543" action="Trade.Parameter.T800543"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="dc1628e3b9794082aa82d5c16187cb6g" name="产品推送规则维护" code="800544" action="Trade.Parameter.T800544"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+      <trade id="dc1628e3b9794082aa82d5c16187cb6f" name="客户黑名单限额维护" code="800545" action="Trade.Parameter.T800545"  >
+        <metadata value="true" key="isPrintNumber"/>
+      </trade>
+    </category>
+    <category id="5a1f6f8652ee43918a8ca90087835193" name="参数申报"  >
+      <trade id="b02bafba1ea140d3845cc42512834115" name="工单申报" code="800601" action="Trade.Parameter.T800601"  />
+      <trade id="b02bafba1ea140d3845cc42512834116" name="工单审批" code="800602" action="Trade.Parameter.T800602"  />
+      <trade id="2d7205c72a434beeb48d282e2e8ea1bb" name="工单处理" code="800603" action="Trade.Parameter.T800603"  />
+      <trade id="b02bafba1ea140d3845cc42512834117" name="工单查询" code="800604" action="Trade.Parameter.T800604"  />
+    </category>
+  </category>
+</menu>

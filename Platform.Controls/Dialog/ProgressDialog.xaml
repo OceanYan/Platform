@@ -1,0 +1,90 @@
+﻿<local:PageDialog
+    x:Class="Platform.Controls.Dialog.ProgressDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dhcc="http://www.dhcc.com.cn"
+    xmlns:local="clr-namespace:Platform.Controls.Dialog"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="clr-namespace:Platform.Controls.UI"
+    x:Name="this"
+    Title=""
+    MinWidth="320"
+    d:DesignHeight="200"
+    d:DesignWidth="320"
+    mc:Ignorable="d">
+    <local:PageDialog.Resources>
+        <Storyboard x:Key="OnLoaded_Icon" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="icon" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="360" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </local:PageDialog.Resources>
+    <local:PageDialog.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource OnLoaded_Icon}" />
+        </EventTrigger>
+    </local:PageDialog.Triggers>
+    <Grid Margin="20,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <TextBlock
+            Name="text_message"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="24"
+            Text="后台处理中，请稍候..." />
+        <Rectangle
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            Height="1"
+            Fill="Silver" />
+        <TextBlock
+            Name="text_timeSpan"
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="5,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="20"
+            Foreground="Red"
+            Text="已耗时&gt;&gt;00:00:00" />
+        <dhcc:IconBox
+            Name="icon"
+            Grid.Row="2"
+            Margin="5"
+            Code="&#xf110;"
+            Foreground="Blue"
+            RenderTransformOrigin="0.5,0.5">
+            <dhcc:IconBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </dhcc:IconBox.RenderTransform>
+        </dhcc:IconBox>
+        <ui:Button
+            x:Name="btn_Cancel"
+            Grid.Row="2"
+            Grid.Column="3"
+            Width="30"
+            Height="30"
+            MinWidth="0"
+            Click="btn_Cancel_Click"
+            IconCode="&#xf127;"
+            ToolTip="中断"
+            Value="" />
+    </Grid>
+</local:PageDialog>

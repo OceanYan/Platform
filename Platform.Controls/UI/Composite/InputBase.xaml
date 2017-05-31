@@ -1,0 +1,129 @@
+﻿<Border
+    x:Class="Platform.Controls.UI.Composite.InputBase"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:layout="clr-namespace:Platform.Controls.Layout"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="clr-namespace:Platform.Controls.UI"
+    d:DesignHeight="30"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+    <Border.Resources>
+        <ResourceDictionary Source="/Platform.Controls;component/Themes/ControlStyles.xaml" />
+    </Border.Resources>
+    <Border
+        x:Name="bd"
+        layout:ToastAdorner.IsToastAdornerHost="True"
+        Background="White"
+        BorderBrush="Silver"
+        BorderThickness="0,0,0,1">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <!--  前缀修饰  -->
+            <ContentPresenter
+                Margin="2,0"
+                VerticalAlignment="Center"
+                Content="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ui:TextInput}, Path=Prefix}"
+                IsHitTestVisible="False"
+                TextBlock.FontSize="20"
+                TextBlock.FontWeight="Bold"
+                TextBlock.Foreground="Red"
+                TextBlock.TextAlignment="Center" />
+            <!--  输入主体  -->
+            <Grid Grid.Column="1">
+                <!--  输入载体  -->
+                <TextBox
+                    x:Name="tb_Host"
+                    layout:WaterMarkAdorner.WaterMarkText="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ui:TextInput}, Path=WaterMark}"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    IsReadOnly="False"
+                    Style="{StaticResource TextBox_Default}" />
+            </Grid>
+            <!--  长度后缀  -->
+            <ContentPresenter
+                Grid.Column="2"
+                Margin="2,0"
+                VerticalAlignment="Center"
+                Content="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ui:TextInput}, Path=Suffix}"
+                IsHitTestVisible="False"
+                TextBlock.FontSize="20"
+                TextBlock.FontWeight="Bold"
+                TextBlock.Foreground="Red"
+                TextBlock.TextAlignment="Center" />
+            <!--  清理文本  -->
+            <Grid
+                x:Name="host_ClearText"
+                Grid.ColumnSpan="3"
+                Width="20"
+                Height="20"
+                Margin="3"
+                HorizontalAlignment="Right"
+                RenderTransformOrigin="0.5,0.5"
+                Visibility="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ui:TextInput}, Path=IsMouseOver, Converter={x:Static layout:ValueConverter.BoolToVisibility}}">
+                <Ellipse Fill="Silver" />
+                <Rectangle
+                    Height="2"
+                    Margin="2"
+                    Fill="White"
+                    RenderTransformOrigin="0.5,0.5">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform />
+                            <SkewTransform />
+                            <RotateTransform Angle="45" />
+                            <TranslateTransform />
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Rectangle
+                    Height="2"
+                    Margin="2"
+                    Fill="White"
+                    RenderTransformOrigin="0.5,0.5">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform />
+                            <SkewTransform />
+                            <RotateTransform Angle="-45" />
+                            <TranslateTransform />
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Grid.Triggers>
+                    <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="90" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-90" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Grid.Triggers>
+            </Grid>
+        </Grid>
+    </Border>
+</Border>

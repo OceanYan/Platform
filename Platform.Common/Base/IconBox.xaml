@@ -1,0 +1,23 @@
+﻿<UserControl
+    x:Class="Platform.Common.Base.IconBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Platform.Common.Base"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Name="this"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style x:Key="style_iconfont">
+            <Setter Property="TextBlock.FontFamily" Value="/Platform.Common;component/Themes/#FontAwesome" />
+        </Style>
+    </UserControl.Resources>
+    <Viewbox>
+        <TextBlock
+            FontSize="72"
+            Style="{StaticResource style_iconfont}"
+            Text="{Binding ElementName=this, Path=Code}" />
+    </Viewbox>
+</UserControl>

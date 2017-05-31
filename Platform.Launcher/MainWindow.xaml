@@ -1,0 +1,16 @@
+﻿<Window
+    x:Class="Platform.Launcher.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Core="clr-namespace:Platform.Controls.Core;assembly=Platform.Controls"
+    xmlns:Layout="clr-namespace:Platform.Controls.Layout;assembly=Platform.Controls"
+    xmlns:UI="clr-namespace:Platform.Controls.UI;assembly=Platform.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Platform.Launcher"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="综合业务前端系统"
+    ResizeMode="CanMinimize"
+    Style="{x:Null}"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d" />

@@ -1,0 +1,26 @@
+﻿<Window
+    x:Class="Platform.Test.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Custom="http://www.dhcc.com.cn"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Platform.Test"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="525"
+    Height="350"
+    mc:Ignorable="d">
+    <Grid>
+        <Button
+            x:Name="button"
+            Width="75"
+            Margin="401,86,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="button_Click"
+            Content="Button" />
+
+        <Custom:TextInput IsShowTextLength="True" Prefix="cc" />
+
+    </Grid>
+</Window>

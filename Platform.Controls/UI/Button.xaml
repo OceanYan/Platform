@@ -1,0 +1,51 @@
+﻿<core:ComponentBase
+    x:Class="Platform.Controls.UI.Button"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:Platform.Controls.Core"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dhcc="http://www.dhcc.com.cn"
+    xmlns:local="clr-namespace:Platform.Controls.UI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="this"
+    d:DesignHeight="30"
+    d:DesignWidth="120"
+    mc:Ignorable="d">
+    <core:ComponentBase.Resources>
+        <Storyboard x:Key="Storyboard_ClickSpan" FillBehavior="Stop">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="text_ClickSpan" Storyboard.TargetProperty="Text">
+                <ObjectKeyFrameCollection>
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="( 3 )" />
+                    <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="( 2 )" />
+                    <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="( 1 )" />
+                    <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="( 0 )" />
+                </ObjectKeyFrameCollection>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="btn_Host" Storyboard.TargetProperty="Opacity">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.2" />
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="text_ClickSpan" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}" />
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </core:ComponentBase.Resources>
+    <Grid>
+        <Grid.Resources>
+            <ResourceDictionary Source="/Platform.Controls;component/Themes/ControlStyles.xaml" />
+        </Grid.Resources>
+        <Button
+            x:Name="btn_Host"
+            Click="btn_Host_Click"
+            ClickMode="Press"
+            Content="按  钮"
+            Style="{StaticResource Button_Default}"
+            Tag="{Binding ElementName=this, Path=IconCode}" />
+        <TextBlock
+            x:Name="text_ClickSpan"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="18"
+            Foreground="Red"
+            Visibility="Collapsed" />
+    </Grid>
+</core:ComponentBase>

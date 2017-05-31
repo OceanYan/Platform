@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Platform.Addins.T0001" GeneratedClassName="DataInput">
+  <Profiles />
+  <Settings>
+    <Setting Name="Input_A" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ui:cbb_1</Value>
+    </Setting>
+    <Setting Name="Input_B" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ui:cbb_2</Value>
+    </Setting>
+    <Setting Name="Input_C" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">bus:A</Value>
+    </Setting>
+    <Setting Name="Input_D" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">bus:B</Value>
+    </Setting>
+    <Setting Name="other" Type="System.String" Scope="User">
+      <Value Profile="(Default)">123</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

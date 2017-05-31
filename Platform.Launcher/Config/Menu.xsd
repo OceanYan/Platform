@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:attribute name="id" type="xs:string"/>
+  <xs:attribute name="name" type="xs:string"/>
+  <xs:attribute name="code" type="xs:string"/>
+  <xs:attribute name="action" type="xs:string"/>
+  <xs:attribute name="desc" type="xs:string"/>
+  <xs:attribute name="isvisible" type="xs:boolean" default="true"/>
+  <xs:attribute name="key" type="xs:string"/>
+  <xs:attribute name="value" type="xs:string"/>
+
+  <xs:attributeGroup name="base">
+    <xs:attribute ref="id" />
+    <xs:attribute ref="name" use="required"/>
+    <xs:attribute ref="desc"/>
+    <xs:attribute ref="isvisible"  />
+  </xs:attributeGroup>
+
+  <xs:complexType name="menutype">
+    <xs:choice maxOccurs="unbounded" minOccurs="1">
+      <xs:element name="category" type="categorytype"/>
+      <xs:element name="trade" type="tradetype"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="categorytype">
+    <xs:choice maxOccurs="unbounded" minOccurs="1">
+      <xs:element name="category" type="categorytype"/>
+      <xs:element name="trade" type="tradetype"/>
+    </xs:choice>
+    <xs:attributeGroup ref="base"/>
+  </xs:complexType>
+
+  <xs:complexType name="tradetype">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="metadata" type="metadatatype"/>
+    </xs:choice>
+    <xs:attributeGroup ref="base"/>
+    <xs:attribute ref="code" use="required"/>
+    <xs:attribute ref="action" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="metadatatype">
+    <xs:attribute ref="key" use="required"/>
+    <xs:attribute ref="value" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="menu" type="menutype"/>
+</xs:schema>

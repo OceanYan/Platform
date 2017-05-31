@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Platform.Controls.Themes">
+    <!--通用颜色-->
+    <SolidColorBrush x:Key="commonLightGray" Color="#f2f2f2" />
+    <SolidColorBrush x:Key="commonGray" Color="#e7e7e7" />
+    <SolidColorBrush x:Key="commonDarkGray" Color="LightGray" />
+    <SolidColorBrush x:Key="commonPressGray" Color="Gray" />
+    <SolidColorBrush x:Key="commonDisableGray" Color="WhiteSmoke" />
+    <SolidColorBrush x:Key="commonIconAmaranthRed" Color="#FFAE232F" />
+    <!--#FFFFFF99-->
+    <SolidColorBrush x:Key="commonNotEmpty" Color="LightYellow" />
+    <!--数据表格颜色-->
+    <SolidColorBrush x:Key="lineLightGray" Color="#FFD3D5D4" />
+    <SolidColorBrush x:Key="fontLightBlack" Color="#323433" />
+    <!--滚动条颜色-->
+    <SolidColorBrush x:Key="scrollBack" Color="#f2f2f2" />
+    <SolidColorBrush x:Key="scrollFore" Color="LightGray" />
+    <SolidColorBrush x:Key="scrollPress" Color="Gray" />
+    <SolidColorBrush x:Key="ScrollBarDisabledBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="HorizontalScrollBarBackground" Color="Transparent" />
+</ResourceDictionary>

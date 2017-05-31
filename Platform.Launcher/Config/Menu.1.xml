@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Menu.xsd">
+  <category  name="客户业务"  >
+    <category  name="客户管理" >
+      <trade name="客户建立/维护"  code="010101" action="Trade.Customer.T010101" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护1" code="010102" action="Trade.Customer.T010102" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+    </category>
+    <category  name="客户管理1" >
+      <trade  name="客户建立/维护" code="020101" action="Trade.Customer.T010101" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护1" code="020102" action="Trade.Customer.T010102" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+    </category>
+  </category>
+  <category  name="客户业务1" >
+    <category  name="客户管理11" >
+      <trade  name="客户建立/维护111" code="030101" action="Trade.Customer.T010101" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护21" code="030102" action="Trade.Customer.T010102" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+    </category>
+    <category  name="客户管理31" >
+      <trade  name="客户建立/维护" code="040101" action="Trade.Customer.T010101" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护41" code="040102" action="Trade.Customer.T010102" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护" code="0140101" action="Trade.Customer.T010101" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护41" code="0240102" action="Trade.Customer.T010102" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护" code="0340101" action="Trade.Customer.T010101" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护41asdasda大大苏打大苏打啊实打实打算" code="0440102" action="Trade.Customer.T010102" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护" code="0450101" action="Trade.Customer.T010101" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+      <trade  name="客户建立/维护41" code="0460102" action="Trade.Customer.T010102" >
+        <metadata value="true" key="isPrintNumber"/>
+        <metadata value="true" key="isAuth"/>
+        <metadata value="1100" key="Priority"/>
+      </trade>
+    </category>
+  </category>
+</menu>
